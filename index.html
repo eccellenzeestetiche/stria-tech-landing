@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stria-Tech — Il Metodo per Trattare le Smagliature nei Centri Estetici</title>
+  <meta name="description" content="Il primo metodo completo per il trattamento delle smagliature sviluppato in Italia. Tecnologia, cosmetici e protocollo integrato per centri estetici. Esclusiva per zona.">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav__inner container">
+      <a href="#" class="nav__logo">STRIA<span>TECH</span></a>
+      <a href="#contatto" class="btn btn--gold btn--sm">Prenota consulenza</a>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       1. HERO
+  ============================================================ -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="container hero__content hero__content--center">
+      <p class="hero__label">Esclusiva per zona · Disponibilità limitata</p>
+      <h1 class="hero__title hero__title--center">
+        Finalmente un metodo che tratta<br>
+        le smagliature <em>davvero.</em>
+      </h1>
+
+      <!-- VIDEO HERO — incolla qui l'embed quando disponibile -->
+      <div class="hero__video-wrap" id="hero-video">
+        <!-- ESEMPIO: sostituisci questo commento con il tuo codice embed -->
+        <!-- es. <iframe src="https://..." ...></iframe> -->
+        <!-- es. <video src="..." autoplay muted loop playsinline></video> -->
+        <div class="hero__video-ph">
+          <span>▶ Video presentazione Stria-Tech</span>
+        </div>
+      </div>
+
+      <p class="hero__sub hero__sub--center">
+        Stria-Tech unisce tecnologia multipla di ultima generazione,
+        cosmetici professionali e un protocollo strutturato.<br>
+        Non vendi una speranza. Offri un percorso.
+      </p>
+      <p class="hero__body">
+        Se ogni settimana una cliente ti chiede qualcosa per le smagliature
+        e tu non sai cosa risponderle — questa pagina è per te.
+      </p>
+      <div class="hero__actions hero__actions--center">
+        <a href="#contatto" class="btn btn--gold btn--lg">
+          → Prenota la consulenza gratuita e scopri se la tua zona è disponibile
+        </a>
+      </div>
+      <p class="hero__note">Consulenza gratuita in videochiamata · Posti limitati per zona</p>
+
+      <!-- VISUAL MACCHINARIO HERO
+           Per cambiare immagine: sostituisci il file assets/visuals/machine-render.jpg
+           oppure cambia il src qui sotto con il percorso della nuova immagine -->
+      <div class="hero__visual" id="hero-visual">
+        <div class="hero__machine">
+          <img src="./assets/visuals/machine-render.jpg" alt="Dispositivo Stria-Tech" loading="lazy">
+        </div>
+      </div>
+
+    </div>
+    <div class="hero__scroll"><span></span></div>
+  </section>
+
+  <!-- ============================================================
+       2. PRIMA / DOPO
+  ============================================================ -->
+  <section class="prima-dopo" id="prima-dopo">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <p class="section-label section-label--center">Prima e dopo</p>
+        <h2 class="section-title section-title--center">Com'è adesso. Come potrebbe essere.</h2>
+      </div>
+
+      <!-- CAROSELLO BEFORE / AFTER -->
+      <div class="carousel" id="ba-carousel" aria-label="Prima e dopo Stria-Tech">
+
+        <!-- Track -->
+        <div class="carousel__track-wrap">
+          <div class="carousel__track">
+
+            <div class="carousel__slide">
+              <img src="./assets/visuals/before-after.jpg" alt="Prima e dopo — zona smagliature generali" loading="lazy">
+              <p class="carousel__caption">Zona cosce · Smagliature bianche · dopo ciclo completo</p>
+            </div>
+
+            <div class="carousel__slide">
+              <img src="./assets/visuals/ba-slide-2.jpg" alt="Prima e dopo — zona addome" loading="lazy">
+              <p class="carousel__caption">Zona addome · Smagliature post-gravidanza · dopo ciclo completo</p>
+            </div>
+
+            <div class="carousel__slide">
+              <img src="./assets/visuals/ba-slide-3.jpg" alt="Prima e dopo — zona coscia, smagliature recenti" loading="lazy">
+              <p class="carousel__caption">Zona coscia · Smagliature recenti (rosse) · dopo ciclo completo</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Arrows -->
+        <button class="carousel__btn carousel__btn--prev" aria-label="Precedente">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="carousel__btn carousel__btn--next" aria-label="Successivo">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+
+        <!-- Dots -->
+        <div class="carousel__dots" role="tablist">
+          <button class="carousel__dot carousel__dot--active" aria-label="Slide 1" role="tab"></button>
+          <button class="carousel__dot" aria-label="Slide 2" role="tab"></button>
+          <button class="carousel__dot" aria-label="Slide 3" role="tab"></button>
+        </div>
+
+      </div>
+
+      <div class="prima-dopo__grid">
+        <div class="prima-dopo__col prima-dopo__col--prima">
+          <div class="col-header">
+            <span class="col-tag col-tag--prima">Prima</span>
+          </div>
+          <!-- FOTO PRIMA — incolla qui il tag <img> quando disponibile -->
+          <!-- es. <img src="./assets/visuals/prima.jpg" alt="Prima del trattamento" class="col-photo"> -->
+          <ul class="col-list">
+            <li>Una cliente ti mostra le smagliature. Non sai cosa proporle.</li>
+            <li>Improvvisi con quello che hai in cabina. I risultati sono scarsi.</li>
+            <li>Abbassi le aspettative prima ancora di iniziare.</li>
+            <li>Quella cliente non prenota. O non torna.</li>
+            <li>Il tuo centro non ha una risposta su uno degli inestetismi più richiesti.</li>
+            <li>Guardi i competitor e non capisci come si differenziano.</li>
+          </ul>
+        </div>
+        <div class="prima-dopo__col prima-dopo__col--dopo">
+          <div class="col-header">
+            <span class="col-tag col-tag--dopo">Dopo</span>
+          </div>
+          <!-- FOTO DOPO — incolla qui il tag <img> quando disponibile -->
+          <!-- es. <img src="./assets/visuals/dopo.jpg" alt="Dopo il trattamento" class="col-photo"> -->
+          <ul class="col-list">
+            <li>Una cliente ti mostra le smagliature. Sai esattamente cosa dirle.</li>
+            <li>Hai un protocollo strutturato, seduta per seduta. I risultati si vedono.</li>
+            <li>Proponi il percorso completo con sicurezza. Lei prenota.</li>
+            <li>Le clienti tornano, portano amiche, parlano di te.</li>
+            <li>Il tuo centro è l'unico nella zona con questo metodo.</li>
+            <li>Ti sei differenziata su un mercato enorme che quasi nessuno presidia.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-cta">
+        <p class="section-cta__lead">Vuoi diventare il centro di riferimento nella tua zona?<br>Clicca qui sotto e prenota una consulenza gratuita.</p>
+        <a href="#contatto" class="btn btn--gold btn--lg">→ Prenota la consulenza gratuita</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       3. PROBLEMA
+  ============================================================ -->
+  <section class="problema-narrativo" id="problema">
+    <div class="container">
+      <div class="section-header section-header--light">
+        <p class="section-label">Il problema</p>
+        <h2 class="section-title section-title--light">
+          La verità che nessun fornitore ti ha mai detto sulle smagliature.
+        </h2>
+      </div>
+
+      <!-- FOTO AMBIENTALE — incolla qui il tag <img> quando disponibile -->
+      <!-- es. <img src="./assets/visuals/ambientale.jpg" alt="Operatrice in cabina" class="problema-narrativo__foto"> -->
+      <div class="problema-narrativo__foto-wrap" id="problema-foto">
+        <!-- placeholder visibile finché non hai la foto -->
+        <div class="img-ph img-ph--dark" style="--ph-ratio:42%">
+          <span>📷 Foto ambientale<br><small>es. operatrice in cabina con cliente, o dettaglio del macchinario in uso</small></span>
+        </div>
+      </div>
+
+      <div class="narrativo__corpo">
+        <p>Ogni settimana una cliente entra in cabina e te le mostra.</p>
+        <p>Sulle cosce. Sulla pancia. Sul seno dopo la gravidanza.</p>
+        <p>Ti guarda con quella faccia. Quella che dice: <em>"Dimmi che puoi fare qualcosa."</em></p>
+        <p>E tu cosa fai?</p>
+        <p>Cerchi le parole. Abbassi le aspettative. Proponi quello che hai, sapendo già che non basterà.
+        Oppure dici direttamente: <em>"Per le smagliature c'è poco da fare."</em></p>
+        <p>Quella cliente annuisce. Ti ringrazia. E non prenota niente.</p>
+        <p>Non perché non si fidi di te.<br>
+        Ma perché non ha trovato la risposta che cercava.<br>
+        E quella risposta continua a cercarla altrove.</p>
+        <p>Il problema non sei tu.<br>
+        Il problema è che fino ad oggi non esisteva uno strumento vero per trattarle.</p>
+      </div>
+      <div class="narrativo__transizione">
+        <span>Fino ad oggi.</span>
+      </div>
+
+      <div class="section-cta section-cta--dark">
+        <p class="section-cta__lead">Smettila di dire "per le smagliature c'è poco da fare."<br>Clicca qui sotto e scopri cosa puoi offrire davvero.</p>
+        <a href="#contatto" class="btn btn--gold btn--lg">→ Prenota la consulenza gratuita</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       4. COME FUNZIONA
+  ============================================================ -->
+  <section class="metodo" id="metodo">
+    <div class="container">
+      <div class="section-header section-header--light section-header--center">
+        <p class="section-label section-label--center">Come funziona Stria-Tech</p>
+        <h2 class="section-title section-title--light section-title--center">
+          Stria-Tech non è un macchinario.<br>
+          <em>È un metodo completo in 3 fasi.</em>
+        </h2>
+        <p class="section-sub section-sub--center">
+          Sviluppato in oltre 30 anni di esperienza nei centri estetici.
+          Testato in cabina prima di essere messo nelle mani di altri professionisti.
+        </p>
+      </div>
+
+      <div class="metodo__layout">
+
+        <!-- Steps -->
+        <div class="metodo__steps">
+          <div class="metodo__step">
+            <div class="step__num">01</div>
+            <div class="step__content">
+              <h3>Valutazione</h3>
+              <p>Prima di tutto, capisci cosa hai davanti. Il protocollo Stria-Tech prevede una valutazione
+              strutturata per identificare il tipo di smagliatura, la sua fase e il percorso più efficace
+              per ogni cliente. Non improvvisi. Sai già dove vuoi arrivare.</p>
+            </div>
+          </div>
+          <div class="metodo__connector"></div>
+          <div class="metodo__step">
+            <div class="step__num">02</div>
+            <div class="step__content">
+              <h3>Trattamento in istituto</h3>
+              <p>La tecnologia multipla di ultima generazione agisce in profondità sul tessuto della smagliatura,
+              stimolando la rigenerazione progressiva. Ogni seduta è parte di un sistema. Non un trattamento
+              isolato. I risultati si costruiscono, seduta dopo seduta. E si documentano.</p>
+            </div>
+          </div>
+          <div class="metodo__connector"></div>
+          <div class="metodo__step">
+            <div class="step__num">03</div>
+            <div class="step__content">
+              <h3>Mantenimento domiciliare</h3>
+              <p>I cosmetici specifici Stria-Tech completano il lavoro tra una seduta e l'altra. La cliente
+              porta a casa parte del protocollo. I risultati continuano anche fuori dalla cabina.
+              E lei torna — perché vede che funziona.</p>
+            </div>
+          </div>
+          <div class="metodo__chiusura">
+            Questo è Stria-Tech. Non una promessa. Un percorso con un inizio, una struttura e un risultato.
+          </div>
+        </div>
+
+        <!-- VISUAL MACCHINARIO METODO
+             Per cambiare immagine: sostituisci il file assets/visuals/machine-render.jpg
+             oppure cambia il src qui sotto con il percorso della nuova immagine -->
+        <div class="metodo__visual" id="metodo-visual">
+          <img src="./assets/visuals/machine-metodo.jpg" alt="Dispositivo Stria-Tech — tecnologia multipla" loading="lazy" class="metodo__machine-img">
+        </div>
+
+      </div>
+
+      <div class="section-cta section-cta--dark">
+        <p class="section-cta__lead">Vuoi vedere il metodo nel dettaglio e capire se fa per il tuo centro?<br>Clicca qui sotto e prenota una consulenza gratuita.</p>
+        <a href="#contatto" class="btn btn--gold btn--lg">→ Prenota la consulenza gratuita</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       5. COSA OFFRIAMO
+  ============================================================ -->
+  <section class="supporto" id="supporto">
+    <div class="container">
+      <div class="supporto__inner">
+        <div class="supporto__left">
+          <div class="section-header section-header--light">
+            <p class="section-label">Il supporto completo</p>
+            <h2 class="section-title section-title--light">
+              Non ti vendiamo un metodo<br>e sparisci nel nulla.
+            </h2>
+          </div>
+          <div class="supporto__testo">
+            <p>Lo sappiamo bene cosa succede di solito.</p>
+            <p>Compri il macchinario. Ti fanno una formazione. Ti mandano il manuale. E poi sei sola.</p>
+            <p>Con Stria-Tech funziona diversamente.<br>
+            Perché noi gestiamo centri estetici da oltre 30 anni.<br>
+            Sappiamo cosa succede in cabina, in reception, durante la consulenza.<br>
+            Sappiamo perché una cliente non compra il percorso completo — e come aiutarti a cambiarlo.</p>
+            <p class="supporto__testo-lead">Ecco cosa hai quando scegli Stria-Tech:</p>
+          </div>
+
+          <!-- VISUAL: kit cosmetici o formazione -->
+          <div class="img-ph img-ph--dark supporto__img-small" style="--ph-ratio:55%">
+            <span>📷 Foto kit cosmetici Stria-Tech<br><small>es. prodotti allineati su superficie scura</small></span>
+          </div>
+        </div>
+
+        <div class="supporto__lista">
+          <div class="supporto__item">
+            <span class="supporto__icon">✦</span>
+            <div>
+              <h3>Il metodo completo</h3>
+              <p>Tecnologia, cosmetici, protocollo. Tutto integrato, tutto testato.</p>
+            </div>
+          </div>
+          <div class="supporto__item">
+            <span class="supporto__icon">✦</span>
+            <div>
+              <h3>Formazione vera</h3>
+              <p>Non un video online. Ti insegniamo a usare il metodo, a fare la consulenza, a presentare il percorso alle clienti.</p>
+            </div>
+          </div>
+          <div class="supporto__item">
+            <span class="supporto__icon">✦</span>
+            <div>
+              <h3>Supporto nelle consulenze</h3>
+              <p>Se non sai come proporre Stria-Tech in cabina, te lo mostriamo. Perché il trattamento perfetto venduto male non porta risultati.</p>
+            </div>
+          </div>
+          <div class="supporto__item">
+            <span class="supporto__icon">✦</span>
+            <div>
+              <h3>Strategie per riempire l'agenda</h3>
+              <p>Ti aiutiamo ad attirare clienti nuove interessate al trattamento. Non aspetti che arrivino da sole.</p>
+            </div>
+          </div>
+          <div class="supporto__item">
+            <span class="supporto__icon">✦</span>
+            <div>
+              <h3>Supporto continuativo</h3>
+              <p>Non sparisci nel nulla dopo l'acquisto. Siamo lì.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-cta">
+        <p class="section-cta__lead">Pronta ad avere finalmente il supporto che meritavi?<br>Clicca qui sotto e prenota una consulenza gratuita.</p>
+        <a href="#contatto" class="btn btn--gold btn--lg">→ Prenota la consulenza gratuita</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       6. CHI SIAMO
+  ============================================================ -->
+  <section class="chi-siamo" id="chi-siamo">
+    <div class="container">
+      <!-- Testo intro -->
+      <div class="chi-siamo__intro">
+        <p class="section-label">Perché dovresti ascoltarci</p>
+        <h2 class="section-title">
+          Non siamo un'azienda<br>che vende macchinari.
+        </h2>
+        <div class="chi-siamo__corpo">
+          <p>Siamo professionisti dell'estetica che gestiscono centri propri da oltre 30 anni.</p>
+          <p>Ogni protocollo che proponiamo è stato testato prima nei nostri centri.
+          Se non funzionava lì, non lo abbiamo messo sul mercato.</p>
+          <p>Stria-Tech nasce così. Dall'unione della nostra esperienza diretta in cabina,
+          dell'ingegneria applicata alle tecnologie estetiche e di una consulenza costruita
+          sul campo — non su carta.</p>
+          <p>Sappiamo cosa vuol dire avere un'agenda instabile.<br>
+          Sappiamo cosa vuol dire avere un macchinario che non lavora.<br>
+          Sappiamo cosa vuol dire sentirti sola nella gestione del centro.</p>
+          <p><strong>Per questo abbiamo costruito qualcosa di diverso.</strong></p>
+        </div>
+      </div>
+
+      <!-- Team grid: 4 persone -->
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-card__photo">
+            <!-- Salva la foto come: assets/team/team-1.jpg -->
+            <img src="./assets/team/team-1.jpg" alt="Membro del team Stria-Tech" loading="lazy" onerror="this.parentElement.classList.add('team-card__photo--missing')">
+          </div>
+          <div class="team-card__info">
+            <strong>Nome Cognome</strong>
+            <span>Co-founder · Esperto di tecnologie estetiche</span>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-card__photo">
+            <!-- Salva la foto come: assets/team/team-2.jpg -->
+            <img src="./assets/team/team-2.jpg" alt="Membro del team Stria-Tech" loading="lazy" onerror="this.parentElement.classList.add('team-card__photo--missing')">
+          </div>
+          <div class="team-card__info">
+            <strong>Nome Cognome</strong>
+            <span>Co-founder · Responsabile formazione e centri</span>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-card__photo">
+            <!-- Salva la foto come: assets/team/team-3.jpg -->
+            <img src="./assets/team/team-3.jpg" alt="Membro del team Stria-Tech" loading="lazy" onerror="this.parentElement.classList.add('team-card__photo--missing')">
+          </div>
+          <div class="team-card__info">
+            <strong>Nome Cognome</strong>
+            <span>Responsabile protocolli e ricerca</span>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-card__photo">
+            <!-- Salva la foto come: assets/team/team-4.jpg -->
+            <img src="./assets/team/team-4.jpg" alt="Membro del team Stria-Tech" loading="lazy" onerror="this.parentElement.classList.add('team-card__photo--missing')">
+          </div>
+          <div class="team-card__info">
+            <strong>Nome Cognome</strong>
+            <span>Consulente commerciale e sviluppo rete</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Numeri -->
+      <div class="chi-siamo__numeri">
+        <div class="numero-card">
+          <span class="numero-card__num">+30</span>
+          <span class="numero-card__label">anni di esperienza nel settore estetico</span>
+        </div>
+        <div class="numero-card">
+          <span class="numero-card__num">3</span>
+          <span class="numero-card__label">centri di proprietà — ogni protocollo testato prima qui</span>
+        </div>
+        <div class="numero-card">
+          <span class="numero-card__num">1</span>
+          <span class="numero-card__label">metodo esclusivo per zona, disponibile in tutta Italia</span>
+        </div>
+      </div>
+
+      <div class="section-cta section-cta--light">
+        <p class="section-cta__lead section-cta__lead--dark">Vuoi capire se Stria-Tech è giusto per il tuo centro?<br>Clicca qui sotto e prenota una consulenza gratuita.</p>
+        <a href="#contatto" class="btn btn--gold btn--lg">→ Prenota la consulenza gratuita</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       7. FORM / CTA FINALE
+  ============================================================ -->
+  <section class="cta-finale" id="contatto">
+    <div class="container">
+      <div class="cta-finale__inner">
+        <p class="section-label section-label--center">Inizia adesso</p>
+        <h2 class="cta-finale__title">
+          Scopri se la tua zona<br>è ancora disponibile.
+        </h2>
+        <p class="cta-finale__sub">
+          Prenota la tua consulenza gratuita in videochiamata.<br>
+          Analizziamo il tuo centro, ti spieghiamo il metodo nel dettaglio
+          e capiamo insieme se Stria-Tech è la scelta giusta per te.
+        </p>
+        <p class="cta-finale__nota-pre">Nessun impegno. Nessuna pressione. Solo una conversazione tra professionisti.</p>
+
+        <form class="cta-form" novalidate>
+          <div class="cta-form__row">
+            <input type="text" placeholder="Nome e cognome" class="cta-form__input" required>
+            <input type="text" placeholder="Nome del centro estetico" class="cta-form__input" required>
+          </div>
+          <div class="cta-form__row">
+            <input type="text" placeholder="Città / Zona" class="cta-form__input" required>
+            <input type="tel" placeholder="Numero di telefono" class="cta-form__input" required>
+          </div>
+          <input type="email" placeholder="Indirizzo email" class="cta-form__input" required>
+          <select class="cta-form__input cta-form__select">
+            <option value="" disabled selected>Come hai conosciuto Stria-Tech?</option>
+            <option>Instagram / Facebook</option>
+            <option>Google</option>
+            <option>Passaparola</option>
+            <option>Fiera / Evento</option>
+            <option>Altro</option>
+          </select>
+          <button type="submit" class="btn btn--gold btn--lg btn--full">
+            → Prenota la consulenza gratuita
+          </button>
+          <p class="cta-form__note">
+            I posti sono limitati per zona. Una volta confermata la tua disponibilità,
+            riceverai una email con il link alla videochiamata.<br>
+            I tuoi dati sono trattati nel rispetto del GDPR.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#" class="nav__logo">STRIA<span>TECH</span></a>
+      <p class="footer__copy">
+        © 2026 Stria-Tech S.r.l. — P.IVA 00000000000<br>
+        <a href="#">Privacy Policy</a> · <a href="#">Cookie Policy</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // ── Scroll-triggered fade-in ─────────────────────────────
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            observer.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    document.querySelectorAll(
+      '.prima-dopo__col, .metodo__step, .supporto__item, .numero-card, .narrativo__corpo p, .section-cta, .img-ph'
+    ).forEach(el => observer.observe(el));
+
+    // ── Sticky nav ───────────────────────────────────────────
+    window.addEventListener('scroll', () => {
+      document.querySelector('.nav').classList.toggle('nav--scrolled', window.scrollY > 40);
+    });
+
+    // ── Carosello Before / After ─────────────────────────────
+    (function () {
+      const carousel = document.getElementById('ba-carousel');
+      if (!carousel) return;
+
+      const track   = carousel.querySelector('.carousel__track');
+      const slides  = carousel.querySelectorAll('.carousel__slide');
+      const dots    = carousel.querySelectorAll('.carousel__dot');
+      const btnPrev = carousel.querySelector('.carousel__btn--prev');
+      const btnNext = carousel.querySelector('.carousel__btn--next');
+      const total   = slides.length;
+      let current   = 0;
+      let timer;
+
+      function goTo(index) {
+        current = (index + total) % total;
+        track.style.transform = `translateX(-${current * 100}%)`;
+        dots.forEach((d, i) => d.classList.toggle('carousel__dot--active', i === current));
+      }
+
+      function next() { goTo(current + 1); }
+      function prev() { goTo(current - 1); }
+
+      function startAuto() {
+        timer = setInterval(next, 4500);
+      }
+      function stopAuto() {
+        clearInterval(timer);
+      }
+
+      btnNext.addEventListener('click', () => { stopAuto(); next(); startAuto(); });
+      btnPrev.addEventListener('click', () => { stopAuto(); prev(); startAuto(); });
+
+      dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => { stopAuto(); goTo(i); startAuto(); });
+      });
+
+      // Swipe/touch su mobile
+      let startX = 0;
+      track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
+      track.addEventListener('touchend', e => {
+        const diff = startX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) { stopAuto(); diff > 0 ? next() : prev(); startAuto(); }
+      }, { passive: true });
+
+      carousel.addEventListener('mouseenter', stopAuto);
+      carousel.addEventListener('mouseleave', startAuto);
+
+      startAuto();
+    })();
+  </script>
+
+</body>
+</html>

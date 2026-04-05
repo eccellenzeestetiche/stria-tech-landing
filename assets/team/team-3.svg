@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 600" width="450" height="600">
+  <defs>
+    <!-- Face radial gradient -->
+    <radialGradient id="faceLight3" cx="44%" cy="35%" r="54%" fx="44%" fy="32%">
+      <stop offset="0%" stop-color="#DCA070"/>
+      <stop offset="55%" stop-color="#C8916A"/>
+      <stop offset="100%" stop-color="#A06840"/>
+    </radialGradient>
+    <!-- Bald head gradient - some shine -->
+    <radialGradient id="baldGrad3" cx="40%" cy="25%" r="60%">
+      <stop offset="0%" stop-color="#DCA070" stop-opacity="1"/>
+      <stop offset="50%" stop-color="#C08060"/>
+      <stop offset="100%" stop-color="#9A6040"/>
+    </radialGradient>
+    <!-- Neck gradient -->
+    <radialGradient id="neckGrad3" cx="50%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#C8916A"/>
+      <stop offset="100%" stop-color="#9A6A48"/>
+    </radialGradient>
+    <!-- Blazer gradient -->
+    <linearGradient id="blazerGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E2535"/>
+      <stop offset="100%" stop-color="#0E1420"/>
+    </linearGradient>
+    <!-- Light shirt gradient -->
+    <linearGradient id="shirtGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E8E0D0"/>
+      <stop offset="100%" stop-color="#D0C8B8"/>
+    </linearGradient>
+    <!-- Goatee grey gradient -->
+    <radialGradient id="goateeGrad3" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#A0A098"/>
+      <stop offset="100%" stop-color="#707068"/>
+    </radialGradient>
+    <!-- Bald shine highlight -->
+    <radialGradient id="baldShine3" cx="38%" cy="22%" r="30%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect fill="#0a0a0a" width="450" height="600"/>
+
+  <!-- ===================== BODY - slightly turned ===================== -->
+  <!-- Blazer body (slightly angled - right shoulder slightly back) -->
+  <path d="M50 600 L52 415 Q72 382 126 365 L168 350 L168 435 L295 435 L295 350 L335 365 Q390 382 408 415 L410 600 Z" fill="url(#blazerGrad3)"/>
+
+  <!-- Light/cream shirt visible -->
+  <path d="M175 350 L225 345 L278 350 L282 435 L172 435 Z" fill="url(#shirtGrad3)"/>
+
+  <!-- Blazer lapels -->
+  <path d="M168 350 L176 350 L202 418 L168 435 Z" fill="#1C2232"/>
+  <path d="M295 350 L287 350 L262 418 L295 435 Z" fill="#1C2232"/>
+
+  <!-- Arms crossed - robust build, wider -->
+  <path d="M52 475 Q72 455 130 448 L210 454 L218 486 L130 492 Q80 497 58 518 Z" fill="url(#blazerGrad3)"/>
+  <path d="M408 475 Q388 455 330 448 L248 454 L240 486 L330 492 Q372 497 392 518 Z" fill="#1A2030"/>
+  <!-- Arms cross overlap -->
+  <path d="M130 448 Q178 440 225 444 Q272 440 320 448 L320 474 Q272 470 225 474 Q178 470 130 474 Z" fill="#1C2232"/>
+
+  <!-- ===================== NECK ===================== -->
+  <!-- Wider neck for robust build -->
+  <rect x="192" y="305" width="66" height="52" rx="8" fill="url(#neckGrad3)"/>
+  <rect x="192" y="305" width="12" height="52" rx="4" fill="#9A6A48" opacity="0.35"/>
+  <rect x="246" y="305" width="12" height="52" rx="4" fill="#9A6A48" opacity="0.25"/>
+
+  <!-- ===================== FACE ===================== -->
+  <!-- Face shape - wider, more robust -->
+  <ellipse cx="228" cy="213" rx="94" ry="105" fill="url(#faceLight3)"/>
+  <!-- Wider jaw -->
+  <path d="M146 235 Q143 282 170 316 Q196 338 228 340 Q260 338 286 316 Q313 282 310 235" fill="url(#faceLight3)"/>
+
+  <!-- ===================== BALD HEAD ===================== -->
+  <!-- Completely bald - smooth dome, same skin tone -->
+  <ellipse cx="228" cy="150" rx="94" ry="85" fill="url(#baldGrad3)"/>
+  <!-- Scalp highlight (bald shine) -->
+  <ellipse cx="205" cy="120" rx="45" ry="30" fill="url(#baldShine3)"/>
+  <!-- Shadow on sides of head -->
+  <ellipse cx="140" cy="165" rx="18" ry="35" fill="#9A6040" opacity="0.3"/>
+  <ellipse cx="316" cy="165" rx="18" ry="35" fill="#9A6040" opacity="0.25"/>
+  <!-- Hairline stub (very subtle, just texture near temples) -->
+  <path d="M143 188 Q148 175 155 168" fill="none" stroke="#7A5030" stroke-width="1" opacity="0.2"/>
+  <path d="M313 188 Q308 175 301 168" fill="none" stroke="#7A5030" stroke-width="1" opacity="0.2"/>
+
+  <!-- ===================== EARS ===================== -->
+  <ellipse cx="138" cy="228" rx="15" ry="19" fill="#C0885E"/>
+  <ellipse cx="318" cy="228" rx="15" ry="19" fill="#C0885E"/>
+  <ellipse cx="138" cy="228" rx="7" ry="11" fill="#B07848"/>
+  <ellipse cx="318" cy="228" rx="7" ry="11" fill="#B07848"/>
+
+  <!-- ===================== EYEBROWS ===================== -->
+  <!-- Slightly thick, serious eyebrows -->
+  <path d="M158 183 Q177 175 200 178" stroke="#5A4030" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M256 178 Q279 175 298 183" stroke="#5A4030" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- ===================== EYES ===================== -->
+  <!-- Left eye -->
+  <ellipse cx="183" cy="207" rx="21" ry="13" fill="#F0EBE0"/>
+  <circle cx="183" cy="207" r="9" fill="#3A2808"/>
+  <circle cx="183" cy="207" r="5.5" fill="#1E1004"/>
+  <circle cx="186" cy="204" r="2.5" fill="white" opacity="0.7"/>
+  <path d="M162 207 Q183 196 204 207" stroke="#3A2808" stroke-width="2" fill="none"/>
+  <path d="M162 207 Q183 216 204 207" stroke="#8B5A35" stroke-width="1.2" fill="none" opacity="0.4"/>
+  <!-- Slight crow's feet (age) -->
+  <path d="M204 207 Q209 204 212 200" fill="none" stroke="#9A7050" stroke-width="1" opacity="0.3"/>
+  <path d="M162 207 Q157 204 154 200" fill="none" stroke="#9A7050" stroke-width="1" opacity="0.3"/>
+
+  <!-- Right eye -->
+  <ellipse cx="273" cy="207" rx="21" ry="13" fill="#F0EBE0"/>
+  <circle cx="273" cy="207" r="9" fill="#3A2808"/>
+  <circle cx="273" cy="207" r="5.5" fill="#1E1004"/>
+  <circle cx="276" cy="204" r="2.5" fill="white" opacity="0.7"/>
+  <path d="M252 207 Q273 196 294 207" stroke="#3A2808" stroke-width="2" fill="none"/>
+  <path d="M252 207 Q273 216 294 207" stroke="#8B5A35" stroke-width="1.2" fill="none" opacity="0.4"/>
+  <!-- Crow's feet right -->
+  <path d="M294 207 Q299 204 302 200" fill="none" stroke="#9A7050" stroke-width="1" opacity="0.3"/>
+  <path d="M252 207 Q247 204 244 200" fill="none" stroke="#9A7050" stroke-width="1" opacity="0.3"/>
+
+  <!-- ===================== NOSE ===================== -->
+  <!-- More prominent nose -->
+  <path d="M228 216 L222 248 Q228 258 234 248 L228 216" fill="none" stroke="#9A6840" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M218 253 Q228 260 238 253" fill="none" stroke="#9A6840" stroke-width="2.2" stroke-linecap="round"/>
+  <ellipse cx="220" cy="254" rx="5.5" ry="3" fill="#9A6840" opacity="0.45"/>
+  <ellipse cx="236" cy="254" rx="5.5" ry="3" fill="#9A6840" opacity="0.45"/>
+
+  <!-- ===================== MOUTH ===================== -->
+  <path d="M207 272 Q217 266 228 268 Q239 266 249 272" fill="none" stroke="#7A4020" stroke-width="1.5"/>
+  <path d="M209 272 Q228 282 247 272" fill="#9A5030" opacity="0.65"/>
+  <path d="M210 272 Q228 276 246 272" stroke="#7A4020" stroke-width="1" fill="none"/>
+
+  <!-- ===================== GOATEE / PIZZETTO ===================== -->
+  <!-- Light grey goatee - chin beard only, no full beard -->
+  <!-- Mustache area -->
+  <path d="M208 268 Q218 262 228 265 Q238 262 248 268 Q244 276 228 274 Q212 276 208 268 Z" fill="#888880"/>
+  <!-- Chin beard - rounded goatee shape -->
+  <path d="M208 280 Q215 278 228 280 Q241 278 248 280 Q252 305 248 322 Q240 335 228 338 Q216 335 208 322 Q204 305 208 280 Z" fill="url(#goateeGrad3)"/>
+  <!-- Goatee highlight -->
+  <path d="M218 290 Q228 287 238 290" fill="none" stroke="#B8B8B0" stroke-width="1.5" opacity="0.4"/>
+  <path d="M214 305 Q228 302 242 305" fill="none" stroke="#B8B8B0" stroke-width="1" opacity="0.3"/>
+  <!-- Goatee edge definition -->
+  <path d="M208 280 Q204 310 208 322" fill="none" stroke="#606058" stroke-width="1" opacity="0.3"/>
+  <path d="M248 280 Q252 310 248 322" fill="none" stroke="#606058" stroke-width="1" opacity="0.3"/>
+
+  <!-- ===================== FACE HIGHLIGHT ===================== -->
+  <ellipse cx="215" cy="188" rx="38" ry="28" fill="white" opacity="0.05"/>
+
+</svg>

@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 600" width="450" height="600">
+  <defs>
+    <!-- Face radial gradient -->
+    <radialGradient id="faceLight2" cx="46%" cy="36%" r="52%" fx="46%" fy="33%">
+      <stop offset="0%" stop-color="#E0A880"/>
+      <stop offset="55%" stop-color="#C8916A"/>
+      <stop offset="100%" stop-color="#A87050"/>
+    </radialGradient>
+    <!-- Neck gradient -->
+    <radialGradient id="neckGrad2" cx="50%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#C8916A"/>
+      <stop offset="100%" stop-color="#9A6A48"/>
+    </radialGradient>
+    <!-- Blazer gradient -->
+    <linearGradient id="blazerGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E2535"/>
+      <stop offset="100%" stop-color="#0E1420"/>
+    </linearGradient>
+    <!-- White shirt gradient -->
+    <linearGradient id="shirtGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F5F5F5"/>
+      <stop offset="100%" stop-color="#E0E0E0"/>
+    </linearGradient>
+    <!-- Hair gradient - medium brown wavy -->
+    <linearGradient id="hairGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A2E12"/>
+      <stop offset="50%" stop-color="#3A2210"/>
+      <stop offset="100%" stop-color="#2E1A0A"/>
+    </linearGradient>
+    <!-- Hair highlight -->
+    <radialGradient id="hairHigh2" cx="35%" cy="30%" r="45%">
+      <stop offset="0%" stop-color="#6A4222" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#2E1A0A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect fill="#0a0a0a" width="450" height="600"/>
+
+  <!-- ===================== BODY ===================== -->
+  <!-- Blazer main body -->
+  <path d="M55 600 L55 410 Q75 378 128 362 L170 348 L170 430 L280 430 L280 348 L322 362 Q375 378 395 410 L395 600 Z" fill="url(#blazerGrad2)"/>
+
+  <!-- White shirt visible at center -->
+  <path d="M178 348 L225 343 L272 348 L275 430 L175 430 Z" fill="url(#shirtGrad2)"/>
+
+  <!-- Blazer left lapel -->
+  <path d="M170 348 L178 348 L205 415 L170 430 Z" fill="#1C2232"/>
+  <!-- Blazer right lapel -->
+  <path d="M280 348 L272 348 L245 415 L280 430 Z" fill="#1C2232"/>
+
+  <!-- Gold buttons on blazer - right side (woman's blazer, buttons on left from viewer's perspective = right side of blazer) -->
+  <!-- Left side buttons (viewer left = blazer right for woman) -->
+  <circle cx="196" cy="445" r="6" fill="#C6A75E"/>
+  <circle cx="196" cy="470" r="6" fill="#C6A75E"/>
+  <circle cx="196" cy="495" r="6" fill="#C6A75E"/>
+  <circle cx="196" cy="520" r="6" fill="#C6A75E"/>
+  <!-- Button shine -->
+  <circle cx="194" cy="443" r="2" fill="#E8CC88" opacity="0.7"/>
+  <circle cx="194" cy="468" r="2" fill="#E8CC88" opacity="0.7"/>
+  <circle cx="194" cy="493" r="2" fill="#E8CC88" opacity="0.7"/>
+  <circle cx="194" cy="518" r="2" fill="#E8CC88" opacity="0.7"/>
+
+  <!-- Hands visible at sides (pockets) -->
+  <!-- Left hand hint at pocket -->
+  <path d="M95 500 Q110 490 125 495 Q130 510 120 515 Q105 515 95 508 Z" fill="#C8916A"/>
+  <!-- Right hand hint at pocket -->
+  <path d="M355 500 Q340 490 325 495 Q320 510 330 515 Q345 515 355 508 Z" fill="#C8916A"/>
+
+  <!-- ===================== NECK ===================== -->
+  <rect x="198" y="305" width="54" height="52" rx="8" fill="url(#neckGrad2)"/>
+  <rect x="198" y="305" width="10" height="52" rx="4" fill="#9A6A48" opacity="0.35"/>
+  <rect x="242" y="305" width="10" height="52" rx="4" fill="#9A6A48" opacity="0.25"/>
+
+  <!-- ===================== FACE ===================== -->
+  <!-- Face shape - more oval, feminine -->
+  <ellipse cx="225" cy="210" rx="86" ry="102" fill="url(#faceLight2)"/>
+  <!-- Softer jaw -->
+  <path d="M147 230 Q144 278 172 310 Q198 332 225 334 Q252 332 278 310 Q306 278 303 230" fill="url(#faceLight2)"/>
+
+  <!-- ===================== HAIR ===================== -->
+  <!-- Hair back layer -->
+  <ellipse cx="225" cy="150" rx="100" ry="78" fill="#2E1A0A"/>
+  <!-- Hair sides medium-long wavy -->
+  <!-- Left side hair -->
+  <path d="M135 150 Q122 195 125 255 Q130 290 140 310 Q150 325 158 320 Q150 295 148 265 Q148 215 152 175 Z" fill="#3A2210"/>
+  <!-- Right side hair -->
+  <path d="M315 150 Q328 195 325 255 Q320 290 310 310 Q300 325 292 320 Q300 295 302 265 Q302 215 298 175 Z" fill="#3A2210"/>
+  <!-- Hair top - wavy texture -->
+  <path d="M135 148 Q155 115 185 108 Q205 103 225 102 Q245 103 265 108 Q295 115 315 148" fill="url(#hairGrad2)"/>
+  <!-- Wavy top detail -->
+  <path d="M148 142 Q165 120 185 113 Q205 107 225 106 Q245 107 265 113 Q285 120 302 142" fill="none" stroke="#4A2E12" stroke-width="3" opacity="0.4"/>
+  <!-- Hair highlight -->
+  <ellipse cx="200" cy="118" rx="50" ry="25" fill="url(#hairHigh2)"/>
+  <!-- Hair part/top mass -->
+  <ellipse cx="225" cy="115" rx="90" ry="55" fill="url(#hairGrad2)"/>
+  <!-- Wave on left side -->
+  <path d="M138 185 Q130 210 133 235" fill="none" stroke="#4A2E12" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+  <!-- Wave on right side -->
+  <path d="M312 185 Q320 210 317 235" fill="none" stroke="#4A2E12" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- ===================== EARS ===================== -->
+  <ellipse cx="141" cy="220" rx="13" ry="17" fill="#C0885E"/>
+  <ellipse cx="309" cy="220" rx="13" ry="17" fill="#C0885E"/>
+  <ellipse cx="141" cy="220" rx="6" ry="10" fill="#B07848"/>
+  <ellipse cx="309" cy="220" rx="6" ry="10" fill="#B07848"/>
+  <!-- Small earring - gold accent -->
+  <circle cx="141" cy="233" r="4" fill="#C6A75E"/>
+  <circle cx="309" cy="233" r="4" fill="#C6A75E"/>
+  <circle cx="141" cy="233" r="2" fill="#E8CC88" opacity="0.7"/>
+  <circle cx="309" cy="233" r="2" fill="#E8CC88" opacity="0.7"/>
+
+  <!-- ===================== EYEBROWS ===================== -->
+  <!-- Left eyebrow - slightly arched, elegant -->
+  <path d="M160 175 Q178 167 200 170" stroke="#2E1A0A" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Right eyebrow -->
+  <path d="M250 170 Q272 167 290 175" stroke="#2E1A0A" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- ===================== EYES ===================== -->
+  <!-- Left eye -->
+  <ellipse cx="180" cy="202" rx="20" ry="13" fill="#F5F0E8"/>
+  <circle cx="180" cy="202" r="9" fill="#3A2010"/>
+  <circle cx="180" cy="202" r="5.5" fill="#1C0E06"/>
+  <circle cx="183" cy="199" r="2.5" fill="white" opacity="0.75"/>
+  <path d="M160 202 Q180 192 200 202" stroke="#2E1A0A" stroke-width="2" fill="none"/>
+  <path d="M160 202 Q180 212 200 202" stroke="#8B5A35" stroke-width="1.2" fill="none" opacity="0.5"/>
+  <!-- Eyelashes top left -->
+  <path d="M162 200 L159 194" stroke="#1C1108" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M170 196 L168 190" stroke="#1C1108" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M180 194 L179 188" stroke="#1C1108" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M190 196 L192 190" stroke="#1C1108" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M198 200 L201 195" stroke="#1C1108" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Right eye -->
+  <ellipse cx="270" cy="202" rx="20" ry="13" fill="#F5F0E8"/>
+  <circle cx="270" cy="202" r="9" fill="#3A2010"/>
+  <circle cx="270" cy="202" r="5.5" fill="#1C0E06"/>
+  <circle cx="273" cy="199" r="2.5" fill="white" opacity="0.75"/>
+  <path d="M250 202 Q270 192 290 202" stroke="#2E1A0A" stroke-width="2" fill="none"/>
+  <path d="M250 202 Q270 212 290 202" stroke="#8B5A35" stroke-width="1.2" fill="none" opacity="0.5"/>
+  <!-- Eyelashes top right -->
+  <path d="M252 200 L249 194" stroke="#1C1108" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M260 196 L258 190" stroke="#1C1108" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M270 194 L269 188" stroke="#1C1108" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M280 196 L282 190" stroke="#1C1108" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M288 200 L291 195" stroke="#1C1108" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- ===================== NOSE ===================== -->
+  <path d="M225 212 L220 240 Q225 248 230 240 L225 212" fill="none" stroke="#A07048" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M216 244 Q225 250 234 244" fill="none" stroke="#A07048" stroke-width="1.8" stroke-linecap="round"/>
+  <ellipse cx="218" cy="245" rx="4" ry="2.5" fill="#9A6840" opacity="0.4"/>
+  <ellipse cx="232" cy="245" rx="4" ry="2.5" fill="#9A6840" opacity="0.4"/>
+
+  <!-- ===================== MOUTH ===================== -->
+  <!-- Upper lip -->
+  <path d="M203 264 Q214 258 225 261 Q236 258 247 264" fill="none" stroke="#8B4828" stroke-width="1.5"/>
+  <!-- Cupid's bow -->
+  <path d="M210 264 Q217 259 225 261 Q233 259 240 264" fill="#C0604A" opacity="0.8"/>
+  <!-- Lower lip -->
+  <path d="M205 264 Q225 278 245 264" fill="#B05540" opacity="0.7"/>
+  <!-- Lip line -->
+  <path d="M207 264 Q225 268 243 264" stroke="#8B4828" stroke-width="1" fill="none"/>
+  <!-- Subtle smile -->
+  <path d="M205 264 Q206 269 210 270" fill="none" stroke="#8B4828" stroke-width="1" opacity="0.4"/>
+  <path d="M245 264 Q244 269 240 270" fill="none" stroke="#8B4828" stroke-width="1" opacity="0.4"/>
+
+  <!-- ===================== FACE HIGHLIGHT ===================== -->
+  <ellipse cx="212" cy="185" rx="35" ry="28" fill="white" opacity="0.06"/>
+
+  <!-- Cheek blush subtle -->
+  <ellipse cx="160" cy="228" rx="20" ry="12" fill="#D47858" opacity="0.12"/>
+  <ellipse cx="290" cy="228" rx="20" ry="12" fill="#D47858" opacity="0.12"/>
+
+</svg>

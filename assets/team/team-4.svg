@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 600" width="450" height="600">
+  <defs>
+    <!-- Face radial gradient -->
+    <radialGradient id="faceLight4" cx="46%" cy="36%" r="52%" fx="46%" fy="33%">
+      <stop offset="0%" stop-color="#D8A878"/>
+      <stop offset="55%" stop-color="#C8916A"/>
+      <stop offset="100%" stop-color="#A07048"/>
+    </radialGradient>
+    <!-- Neck gradient -->
+    <radialGradient id="neckGrad4" cx="50%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#C8916A"/>
+      <stop offset="100%" stop-color="#9A6A48"/>
+    </radialGradient>
+    <!-- Blazer gradient -->
+    <linearGradient id="blazerGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E2535"/>
+      <stop offset="100%" stop-color="#0E1420"/>
+    </linearGradient>
+    <!-- Dark blue shirt gradient -->
+    <linearGradient id="shirtGrad4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E3050"/>
+      <stop offset="100%" stop-color="#152440"/>
+    </linearGradient>
+    <!-- Grey-white hair gradient -->
+    <linearGradient id="hairGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C8C8C0"/>
+      <stop offset="40%" stop-color="#A8A8A0"/>
+      <stop offset="100%" stop-color="#888888"/>
+    </linearGradient>
+    <!-- Hair highlight -->
+    <radialGradient id="hairHigh4" cx="38%" cy="25%" r="45%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect fill="#0a0a0a" width="450" height="600"/>
+
+  <!-- ===================== BODY - fuller build ===================== -->
+  <!-- Blazer body - wider shoulders, fuller frame -->
+  <path d="M42 600 L44 418 Q65 382 122 364 L168 348 L168 438 L292 438 L292 348 L340 364 Q395 382 416 418 L418 600 Z" fill="url(#blazerGrad4)"/>
+
+  <!-- Dark blue shirt visible at center -->
+  <path d="M176 348 L225 342 L284 348 L286 438 L174 438 Z" fill="url(#shirtGrad4)"/>
+
+  <!-- Shirt collar detail -->
+  <path d="M198 348 L225 358 L252 348 L260 342 L225 350 L190 342 Z" fill="#182840"/>
+
+  <!-- Blazer lapels -->
+  <path d="M168 348 L176 348 L204 420 L168 438 Z" fill="#1C2232"/>
+  <path d="M292 348 L284 348 L256 420 L292 438 Z" fill="#1C2232"/>
+
+  <!-- Hands clasped in front -->
+  <!-- Left hand -->
+  <path d="M170 470 Q175 455 195 452 L230 452 L230 488 Q220 495 200 492 Q178 490 170 478 Z" fill="#C8916A"/>
+  <!-- Right hand overlapping -->
+  <path d="M220 452 L260 452 Q278 455 282 470 Q282 480 270 488 Q250 495 230 488 L230 452 Z" fill="#BE8860"/>
+  <!-- Fingers hint -->
+  <path d="M175 475 Q185 468 200 470" fill="none" stroke="#A07048" stroke-width="1.5" opacity="0.5"/>
+  <path d="M240 460 Q255 455 268 460" fill="none" stroke="#A07048" stroke-width="1.5" opacity="0.5"/>
+  <!-- Knuckle lines -->
+  <path d="M180 480 Q195 477 210 480" fill="none" stroke="#9A6840" stroke-width="1" opacity="0.4"/>
+
+  <!-- Blazer sleeves - fuller arm -->
+  <path d="M44 490 Q62 470 122 462 L172 462 L172 500 Q140 502 100 512 Q70 520 50 535 Z" fill="url(#blazerGrad4)"/>
+  <path d="M418 490 Q400 470 340 462 L290 462 L290 500 Q320 502 360 512 Q390 520 410 535 Z" fill="#1A2030"/>
+
+  <!-- ===================== NECK ===================== -->
+  <!-- Wider neck -->
+  <rect x="192" y="302" width="66" height="54" rx="8" fill="url(#neckGrad4)"/>
+  <rect x="192" y="302" width="12" height="54" rx="4" fill="#9A6A48" opacity="0.35"/>
+  <rect x="246" y="302" width="12" height="54" rx="4" fill="#9A6A48" opacity="0.25"/>
+
+  <!-- ===================== FACE ===================== -->
+  <!-- Face shape - fuller, rounder for 60ish man -->
+  <ellipse cx="225" cy="210" rx="96" ry="108" fill="url(#faceLight4)"/>
+  <!-- Fuller cheeks / jaw -->
+  <path d="M143 230 Q140 285 168 320 Q194 345 225 347 Q256 345 282 320 Q310 285 307 230" fill="url(#faceLight4)"/>
+  <!-- Jowl hint (fuller build, age) -->
+  <ellipse cx="158" cy="310" rx="22" ry="14" fill="#C8916A" opacity="0.3"/>
+  <ellipse cx="292" cy="310" rx="22" ry="14" fill="#C8916A" opacity="0.3"/>
+
+  <!-- ===================== HAIR ===================== -->
+  <!-- Grey-white hair swept back, medium-short -->
+  <!-- Back of hair -->
+  <ellipse cx="225" cy="138" rx="97" ry="72" fill="#909088"/>
+  <!-- Hair top swept back - lighter grey-white -->
+  <path d="M140 155 Q155 100 190 95 Q207 90 225 89 Q243 90 260 95 Q295 100 310 155" fill="url(#hairGrad4)"/>
+  <!-- Hair swept back texture - lines going back -->
+  <path d="M160 125 Q175 108 195 100" fill="none" stroke="#D0D0C8" stroke-width="2.5" opacity="0.4" stroke-linecap="round"/>
+  <path d="M175 112 Q190 98 210 93" fill="none" stroke="#D0D0C8" stroke-width="2" opacity="0.35" stroke-linecap="round"/>
+  <path d="M210 90 Q225 87 240 90" fill="none" stroke="#D0D0C8" stroke-width="2.5" opacity="0.4" stroke-linecap="round"/>
+  <path d="M240 93 Q258 98 272 110" fill="none" stroke="#D0D0C8" stroke-width="2" opacity="0.35" stroke-linecap="round"/>
+  <path d="M270 112 Q285 125 295 140" fill="none" stroke="#C8C8C0" stroke-width="2" opacity="0.3" stroke-linecap="round"/>
+  <!-- Hair sides - temples, slightly greyer -->
+  <path d="M143 155 Q133 185 135 235 Q140 248 150 244 Q148 210 150 180 Z" fill="#888888"/>
+  <path d="M307 155 Q317 185 315 235 Q310 248 300 244 Q302 210 300 180 Z" fill="#888888"/>
+  <!-- Hair highlight / shine -->
+  <ellipse cx="205" cy="108" rx="48" ry="22" fill="url(#hairHigh4)"/>
+  <!-- Top hair mass with swept-back look -->
+  <ellipse cx="225" cy="108" rx="88" ry="50" fill="url(#hairGrad4)"/>
+  <!-- Parting line subtle -->
+  <path d="M175 95 Q200 88 225 89" fill="none" stroke="#787870" stroke-width="2" opacity="0.3"/>
+
+  <!-- ===================== EARS ===================== -->
+  <ellipse cx="137" cy="225" rx="15" ry="20" fill="#C0885E"/>
+  <ellipse cx="313" cy="225" rx="15" ry="20" fill="#C0885E"/>
+  <ellipse cx="137" cy="225" rx="7" ry="12" fill="#B07848"/>
+  <ellipse cx="313" cy="225" rx="7" ry="12" fill="#B07848"/>
+
+  <!-- ===================== EYEBROWS ===================== -->
+  <!-- Greying eyebrows, slightly bushy -->
+  <path d="M155 180 Q175 172 200 175" stroke="#888878" stroke-width="5.5" fill="none" stroke-linecap="round"/>
+  <!-- Right eyebrow -->
+  <path d="M250 175 Q275 172 295 180" stroke="#888878" stroke-width="5.5" fill="none" stroke-linecap="round"/>
+  <!-- Some dark hairs in eyebrows -->
+  <path d="M158 178 Q175 172 198 175" stroke="#5A5048" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+  <path d="M252 175 Q275 172 293 178" stroke="#5A5048" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- ===================== EYES ===================== -->
+  <!-- Left eye - smiling, slightly narrowed -->
+  <ellipse cx="180" cy="207" rx="21" ry="12" fill="#F0EBE0"/>
+  <circle cx="180" cy="207" r="8.5" fill="#3A2808"/>
+  <circle cx="180" cy="207" r="5" fill="#1E1004"/>
+  <circle cx="183" cy="204" r="2.5" fill="white" opacity="0.7"/>
+  <path d="M159 207 Q180 196 201 207" stroke="#3A2808" stroke-width="2" fill="none"/>
+  <!-- Bottom lid rises slightly (smile) -->
+  <path d="M159 207 Q180 215 201 207" stroke="#8B5A35" stroke-width="1.5" fill="none" opacity="0.45"/>
+  <!-- Laugh line -->
+  <path d="M201 209 Q208 215 210 222" fill="none" stroke="#9A7050" stroke-width="1.5" opacity="0.3"/>
+  <path d="M159 209 Q152 215 150 222" fill="none" stroke="#9A7050" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Right eye - smiling -->
+  <ellipse cx="270" cy="207" rx="21" ry="12" fill="#F0EBE0"/>
+  <circle cx="270" cy="207" r="8.5" fill="#3A2808"/>
+  <circle cx="270" cy="207" r="5" fill="#1E1004"/>
+  <circle cx="273" cy="204" r="2.5" fill="white" opacity="0.7"/>
+  <path d="M249 207 Q270 196 291 207" stroke="#3A2808" stroke-width="2" fill="none"/>
+  <path d="M249 207 Q270 215 291 207" stroke="#8B5A35" stroke-width="1.5" fill="none" opacity="0.45"/>
+  <!-- Laugh lines -->
+  <path d="M291 209 Q298 215 300 222" fill="none" stroke="#9A7050" stroke-width="1.5" opacity="0.3"/>
+  <path d="M249 209 Q242 215 240 222" fill="none" stroke="#9A7050" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- ===================== NOSE ===================== -->
+  <!-- Fuller nose -->
+  <path d="M225 217 L218 250 Q225 260 232 250 L225 217" fill="none" stroke="#9A6840" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M214 255 Q225 262 236 255" fill="none" stroke="#9A6840" stroke-width="2.2" stroke-linecap="round"/>
+  <ellipse cx="216" cy="256" rx="6" ry="3.5" fill="#9A6840" opacity="0.4"/>
+  <ellipse cx="234" cy="256" rx="6" ry="3.5" fill="#9A6840" opacity="0.4"/>
+
+  <!-- ===================== MOUTH - SMILE ===================== -->
+  <!-- Big warm smile -->
+  <!-- Upper lip -->
+  <path d="M202 272 Q213 265 225 267 Q237 265 248 272" fill="none" stroke="#7A3A18" stroke-width="1.5"/>
+  <!-- Lower lip - fuller, smile -->
+  <path d="M202 272 Q225 292 248 272" fill="#A85030" opacity="0.75"/>
+  <!-- Teeth visible (smile) -->
+  <path d="M207 272 Q225 284 243 272 L243 279 Q225 289 207 279 Z" fill="#F0EDE5" opacity="0.9"/>
+  <!-- Teeth line -->
+  <path d="M215 274 L215 280" stroke="#D0CDCA" stroke-width="0.8" opacity="0.5"/>
+  <path d="M225 273 L225 281" stroke="#D0CDCA" stroke-width="0.8" opacity="0.5"/>
+  <path d="M235 274 L235 280" stroke="#D0CDCA" stroke-width="0.8" opacity="0.5"/>
+  <!-- Lip line -->
+  <path d="M208 272 Q225 276 242 272" stroke="#7A3A18" stroke-width="1" fill="none"/>
+  <!-- Smile creases -->
+  <path d="M202 272 Q195 278 196 288" fill="none" stroke="#9A6848" stroke-width="2" opacity="0.35" stroke-linecap="round"/>
+  <path d="M248 272 Q255 278 254 288" fill="none" stroke="#9A6848" stroke-width="2" opacity="0.35" stroke-linecap="round"/>
+
+  <!-- ===================== FOREHEAD LINES (age detail) ===================== -->
+  <path d="M170 170 Q200 165 225 166 Q250 165 280 170" fill="none" stroke="#9A6848" stroke-width="1" opacity="0.15"/>
+  <path d="M175 162 Q200 157 225 158 Q250 157 275 162" fill="none" stroke="#9A6848" stroke-width="0.8" opacity="0.1"/>
+
+  <!-- ===================== FACE HIGHLIGHT ===================== -->
+  <ellipse cx="210" cy="185" rx="40" ry="30" fill="white" opacity="0.05"/>
+
+  <!-- Cheek fullness highlight -->
+  <ellipse cx="158" cy="250" rx="25" ry="18" fill="white" opacity="0.04"/>
+  <ellipse cx="292" cy="250" rx="25" ry="18" fill="white" opacity="0.04"/>
+
+</svg>

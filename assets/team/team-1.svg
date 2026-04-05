@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 600" width="450" height="600">
+  <defs>
+    <!-- Face radial gradient for soft light -->
+    <radialGradient id="faceLight1" cx="45%" cy="38%" r="52%" fx="45%" fy="35%">
+      <stop offset="0%" stop-color="#E8B08A" stop-opacity="1"/>
+      <stop offset="60%" stop-color="#C8916A" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#A87050" stop-opacity="1"/>
+    </radialGradient>
+    <!-- Neck shadow -->
+    <radialGradient id="neckGrad1" cx="50%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#C8916A"/>
+      <stop offset="100%" stop-color="#9A6A48"/>
+    </radialGradient>
+    <!-- Blazer gradient -->
+    <linearGradient id="blazerGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E2535"/>
+      <stop offset="100%" stop-color="#0E1420"/>
+    </linearGradient>
+    <!-- T-shirt white -->
+    <linearGradient id="shirtGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EFEFEF"/>
+      <stop offset="100%" stop-color="#D8D8D8"/>
+    </linearGradient>
+    <!-- Hair gradient dark curly -->
+    <radialGradient id="hairGrad1" cx="50%" cy="60%" r="55%">
+      <stop offset="0%" stop-color="#2E1C0A"/>
+      <stop offset="100%" stop-color="#1C1108"/>
+    </radialGradient>
+    <!-- Beard gradient -->
+    <radialGradient id="beardGrad1" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#2A1A08"/>
+      <stop offset="100%" stop-color="#1C1108"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect fill="#0a0a0a" width="450" height="600"/>
+
+  <!-- ===================== BODY ===================== -->
+  <!-- Blazer body - dark navy -->
+  <path d="M60 600 L60 420 Q80 390 130 375 L165 360 L165 440 L285 440 L285 360 L320 375 Q370 390 390 420 L390 600 Z" fill="url(#blazerGrad1)"/>
+
+  <!-- White t-shirt visible at center -->
+  <path d="M175 360 L225 355 L275 360 L280 440 L170 440 Z" fill="url(#shirtGrad1)"/>
+
+  <!-- Blazer left lapel -->
+  <path d="M165 360 L175 360 L200 420 L165 440 Z" fill="#1C2232"/>
+  <!-- Blazer right lapel -->
+  <path d="M285 360 L275 360 L250 420 L285 440 Z" fill="#1C2232"/>
+
+  <!-- Left arm crossed over right -->
+  <path d="M60 480 Q80 460 130 455 L200 460 L210 490 L130 495 Q85 500 65 520 Z" fill="url(#blazerGrad1)"/>
+  <!-- Right arm crossed -->
+  <path d="M390 480 Q370 460 320 455 L250 460 L240 490 L320 495 Q365 500 385 520 Z" fill="#1A2030"/>
+  <!-- Forearm overlap (arms crossed) -->
+  <path d="M130 455 Q180 445 225 450 Q270 445 320 455 L320 480 Q270 475 225 478 Q180 475 130 480 Z" fill="#1C2232"/>
+
+  <!-- ===================== NECK ===================== -->
+  <rect x="195" y="310" width="60" height="60" rx="8" fill="url(#neckGrad1)"/>
+  <!-- Neck shadow sides -->
+  <rect x="195" y="310" width="12" height="60" rx="4" fill="#9A6A48" opacity="0.4"/>
+  <rect x="243" y="310" width="12" height="60" rx="4" fill="#9A6A48" opacity="0.3"/>
+
+  <!-- ===================== FACE ===================== -->
+  <!-- Face shape - slightly wider jaw -->
+  <ellipse cx="225" cy="220" rx="92" ry="108" fill="url(#faceLight1)"/>
+  <!-- Slight jaw definition -->
+  <path d="M148 240 Q145 290 175 320 Q200 338 225 340 Q250 338 275 320 Q305 290 302 240" fill="url(#faceLight1)"/>
+
+  <!-- ===================== HAIR ===================== -->
+  <!-- Curly dark hair - top mass -->
+  <ellipse cx="225" cy="130" rx="98" ry="72" fill="url(#hairGrad1)"/>
+  <!-- Curly texture bumps left -->
+  <circle cx="148" cy="148" r="22" fill="#1C1108"/>
+  <circle cx="158" cy="125" r="18" fill="#231508"/>
+  <circle cx="172" cy="108" r="20" fill="#1C1108"/>
+  <!-- Curly texture bumps center-left -->
+  <circle cx="192" cy="102" r="20" fill="#231508"/>
+  <circle cx="215" cy="95" r="22" fill="#1C1108"/>
+  <!-- Curly texture bumps center-right -->
+  <circle cx="238" cy="98" r="20" fill="#231508"/>
+  <circle cx="258" cy="105" r="19" fill="#1C1108"/>
+  <!-- Curly texture bumps right -->
+  <circle cx="275" cy="118" r="18" fill="#231508"/>
+  <circle cx="288" cy="140" r="16" fill="#1C1108"/>
+  <circle cx="295" cy="160" r="14" fill="#231508"/>
+  <!-- Hair sides hanging down -->
+  <ellipse cx="148" cy="200" rx="20" ry="45" fill="#1C1108"/>
+  <ellipse cx="300" cy="195" rx="18" ry="40" fill="#1C1108"/>
+  <!-- Hair medium length at sides -->
+  <path d="M140 155 Q130 195 133 245 Q140 255 152 250 Q148 210 150 175 Z" fill="#1C1108"/>
+  <path d="M310 155 Q320 195 317 245 Q310 255 298 250 Q302 210 300 175 Z" fill="#1C1108"/>
+
+  <!-- ===================== EARS ===================== -->
+  <ellipse cx="135" cy="228" rx="14" ry="18" fill="#C0885E"/>
+  <ellipse cx="315" cy="228" rx="14" ry="18" fill="#C0885E"/>
+  <ellipse cx="135" cy="228" rx="7" ry="11" fill="#B07848"/>
+  <ellipse cx="315" cy="228" rx="7" ry="11" fill="#B07848"/>
+
+  <!-- ===================== EYEBROWS ===================== -->
+  <!-- Left eyebrow - thick dark -->
+  <path d="M163 182 Q183 174 203 177" stroke="#1C1108" stroke-width="5.5" fill="none" stroke-linecap="round"/>
+  <!-- Right eyebrow -->
+  <path d="M247 177 Q267 174 287 182" stroke="#1C1108" stroke-width="5.5" fill="none" stroke-linecap="round"/>
+
+  <!-- ===================== EYES ===================== -->
+  <!-- Left eye socket shadow -->
+  <ellipse cx="183" cy="210" rx="22" ry="14" fill="#B07848" opacity="0.3"/>
+  <!-- Left eye white -->
+  <ellipse cx="183" cy="210" rx="18" ry="11" fill="#F5F0E8"/>
+  <!-- Left iris - dark brown -->
+  <circle cx="183" cy="210" r="8" fill="#3D2010"/>
+  <circle cx="183" cy="210" r="5" fill="#1E0E06"/>
+  <circle cx="186" cy="207" r="2.5" fill="white" opacity="0.7"/>
+  <!-- Left eyelid line -->
+  <path d="M165 210 Q183 200 201 210" stroke="#1C1108" stroke-width="1.8" fill="none"/>
+  <path d="M165 210 Q183 218 201 210" stroke="#8B5A35" stroke-width="1" fill="none" opacity="0.5"/>
+
+  <!-- Right eye socket shadow -->
+  <ellipse cx="267" cy="210" rx="22" ry="14" fill="#B07848" opacity="0.3"/>
+  <!-- Right eye white -->
+  <ellipse cx="267" cy="210" rx="18" ry="11" fill="#F5F0E8"/>
+  <!-- Right iris -->
+  <circle cx="267" cy="210" r="8" fill="#3D2010"/>
+  <circle cx="267" cy="210" r="5" fill="#1E0E06"/>
+  <circle cx="270" cy="207" r="2.5" fill="white" opacity="0.7"/>
+  <!-- Right eyelid line -->
+  <path d="M249 210 Q267 200 285 210" stroke="#1C1108" stroke-width="1.8" fill="none"/>
+  <path d="M249 210 Q267 218 285 210" stroke="#8B5A35" stroke-width="1" fill="none" opacity="0.5"/>
+
+  <!-- ===================== NOSE ===================== -->
+  <path d="M225 218 L220 248 Q225 256 230 248 L225 218" fill="none" stroke="#A07048" stroke-width="2" stroke-linecap="round"/>
+  <path d="M216 252 Q225 258 234 252" fill="none" stroke="#A07048" stroke-width="2" stroke-linecap="round"/>
+  <!-- Nostril shadows -->
+  <ellipse cx="218" cy="253" rx="5" ry="3" fill="#9A6840" opacity="0.5"/>
+  <ellipse cx="232" cy="253" rx="5" ry="3" fill="#9A6840" opacity="0.5"/>
+
+  <!-- ===================== MOUTH ===================== -->
+  <!-- Lips - partially hidden by beard but visible -->
+  <path d="M205 274 Q215 268 225 270 Q235 268 245 274" fill="none" stroke="#8B5030" stroke-width="2" stroke-linecap="round"/>
+  <path d="M207 274 Q225 284 243 274" fill="#A05838" opacity="0.7"/>
+
+  <!-- ===================== BEARD ===================== -->
+  <!-- Full thick beard covering lower face -->
+  <path d="M148 250 Q145 265 148 285 Q155 325 175 340 Q200 352 225 354 Q250 352 275 340 Q295 325 302 285 Q305 265 302 250 Q285 260 270 255 Q248 250 225 252 Q202 250 180 255 Q165 260 148 250 Z" fill="url(#beardGrad1)"/>
+  <!-- Beard texture highlight -->
+  <path d="M165 268 Q185 262 205 264 Q225 266 245 264 Q265 262 285 268" fill="none" stroke="#2E1C0A" stroke-width="1" opacity="0.5"/>
+  <!-- Mustache -->
+  <path d="M200 270 Q215 265 225 268 Q235 265 250 270 Q240 278 225 276 Q210 278 200 270 Z" fill="#1C1108"/>
+  <!-- Beard fade top edges -->
+  <path d="M148 250 Q165 245 183 248" fill="none" stroke="#1C1108" stroke-width="3" opacity="0.6"/>
+  <path d="M302 250 Q285 245 267 248" fill="none" stroke="#1C1108" stroke-width="3" opacity="0.6"/>
+
+  <!-- ===================== SUBTLE FACE HIGHLIGHT ===================== -->
+  <ellipse cx="215" cy="190" rx="38" ry="30" fill="white" opacity="0.05"/>
+
+</svg>
