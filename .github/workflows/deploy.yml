@@ -23,4 +23,3 @@ jobs:
           port: ${{ secrets.SITEGROUND_PORT }}
           source: "index.html,style.css,assets"
           target: ${{ secrets.SITEGROUND_TARGET_DIR }}
-       
