@@ -21,5 +21,6 @@ jobs:
           key: ${{ secrets.SITEGROUND_PRIVATE_KEY }}
           passphrase: ${{ secrets.SITEGROUND_PASSPHRASE }}
           port: ${{ secrets.SITEGROUND_PORT }}
-          source: source: "index.html,style.css,assets,.htaccess"
-          target: ${{ secrets.SITEGROUND_TARGET_DIR }}
+          source: "index.html,style.css,assets,.htaccess"
+          target: /home/customer/www/web.eccellenzeestetiche.it/public_html/stria-tech
+          overwrite: true
