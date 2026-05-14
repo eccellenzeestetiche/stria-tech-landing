@@ -147,6 +147,17 @@ em {
   border-color: var(--gold-light);
 }
 
+.btn--green {
+  background: #2e9e5b;
+  color: var(--white);
+  border: 1.5px solid #2e9e5b;
+}
+
+.btn--green:hover {
+  background: #27894e;
+  border-color: #27894e;
+}
+
 .btn--outline {
   background: transparent;
   color: var(--white);
