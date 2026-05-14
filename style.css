@@ -148,14 +148,14 @@ em {
 }
 
 .btn--green {
-  background: #2e9e5b;
+  background: #28a745;
   color: var(--white);
-  border: 1.5px solid #2e9e5b;
+  border: 1.5px solid #28a745;
 }
 
 .btn--green:hover {
-  background: #27894e;
-  border-color: #27894e;
+  background: #218838;
+  border-color: #218838;
 }
 
 .btn--outline {
