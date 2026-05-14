@@ -1,0 +1,4 @@
+DirectoryIndex index.html
+
+RewriteEngine On
+RewriteRule ^stria-tech/?$ /stria-tech/index.html [R=301,L]
