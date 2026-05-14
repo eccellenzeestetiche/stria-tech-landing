@@ -272,6 +272,7 @@ em {
 }
 
 .hero__sub--center { margin-inline: auto; }
+.hero__sub--spaced { margin-top: 2.5rem; }
 
 .hero__body {
   font-size: 0.95rem;
@@ -412,12 +413,10 @@ em {
 
 .prima-dopo__col--prima {
   background: #1a1a1a;
-  border-top: 2px solid #555;
 }
 
 .prima-dopo__col--dopo {
   background: #0f0c05;
-  border-top: 2px solid var(--gold);
   transition-delay: 0.12s;
 }
 
@@ -490,7 +489,7 @@ em {
 
 .problema-narrativo {
   padding-block: var(--space-xl);
-  background: var(--black-mid);
+  background: #f9f7f4;  /* bg: bianco — alterna con economia (nero) */
 }
 
 .narrativo__corpo {
@@ -611,13 +610,173 @@ em {
 }
 
 /* ============================================================
+   ECONOMIA
+   ============================================================ */
+
+.economia {
+  padding-block: var(--space-xl);
+  background: var(--black);
+  background-image:
+    radial-gradient(ellipse 90% 50% at 50% 0%,   rgba(198,167,94,0.07) 0%, transparent 60%),
+    radial-gradient(ellipse 70% 40% at 80% 100%,  rgba(198,167,94,0.05) 0%, transparent 55%);
+}
+
+.economia__titolo {
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 14vw, 7rem);
+  font-weight: 400;
+  line-height: 1.0;
+  color: var(--white);
+  margin-bottom: var(--space-lg);
+  letter-spacing: -0.02em;
+}
+
+.economia__corpo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  margin-bottom: var(--space-lg);
+  max-width: 600px;
+}
+
+.economia__corpo p {
+  font-size: clamp(1.05rem, 3.5vw, 1.25rem);
+  color: var(--white-muted);
+  line-height: 1.7;
+}
+
+.economia__corpo strong {
+  color: var(--white);
+  font-weight: 700;
+}
+
+.economia__visual-ph {
+  margin-bottom: var(--space-lg);
+}
+
+.economia__visual-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+  margin-bottom: var(--space-lg);
+  object-fit: cover;
+}
+
+/* Blocco centrale oro */
+.economia__blocco-oro {
+  border-left: 3px solid var(--gold);
+  padding: 2rem 1.5rem;
+  margin-bottom: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: rgba(198,167,94,0.04);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.economia__blocco-oro p {
+  font-family: var(--font-serif);
+  font-size: clamp(1.1rem, 4vw, 1.5rem);
+  color: var(--gold);
+  line-height: 1.5;
+}
+
+.economia__blocco-oro-finale {
+  font-size: clamp(1.4rem, 5vw, 2rem) !important;
+  font-weight: 700;
+  color: var(--gold) !important;
+}
+
+/* Contatore */
+.economia__counter {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  margin-bottom: var(--space-lg);
+  border: 1px solid rgba(198,167,94,0.2);
+  border-radius: var(--radius);
+  background: rgba(198,167,94,0.03);
+}
+
+.economia__counter-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--white-muted);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.economia__counter-num {
+  font-family: var(--font-serif);
+  font-size: clamp(3.5rem, 16vw, 7rem);
+  color: var(--gold);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+  transition: all 0.1s ease;
+}
+
+.economia__counter-sub {
+  font-size: 0.8rem;
+  color: var(--white-muted);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* Chiusura */
+.economia__chiusura {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: var(--space-lg);
+  max-width: 600px;
+}
+
+.economia__chiusura p {
+  font-size: clamp(1rem, 3.5vw, 1.15rem);
+  color: var(--white-muted);
+  line-height: 1.75;
+}
+
+.economia__chiusura-em {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 6vw, 2.2rem) !important;
+  color: var(--white) !important;
+  font-style: italic;
+}
+
+.economia__chiusura strong {
+  color: var(--white);
+}
+
+/* CTA economia */
+.section-cta--economia {
+}
+
+.section-cta--economia .section-cta__lead {
+  font-family: var(--font-serif);
+  font-size: clamp(1rem, 3.5vw, 1.2rem);
+  color: var(--white);
+  font-style: italic;
+}
+
+.section-cta__note-zona {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.3);
+  text-align: center;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  margin-top: 0.5rem;
+}
+
+/* ============================================================
    SUPPORTO (cosa offriamo)
    ============================================================ */
 
 .supporto {
   padding-block: var(--space-xl);
-  background: var(--black);
-  border-top: 1px solid rgba(198,167,94,0.12);
+  background: #f9f7f4;  /* bg: bianco — alterna con metodo (nero) */
 }
 
 .supporto__inner {
@@ -700,17 +859,17 @@ em {
 
 .hero__visual {
   margin-top: var(--space-lg);
-  display: flex;
-  justify-content: center;
+  /* Rompe il container per andare full-width */
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 .hero__machine {
+  position: relative;
   width: 100%;
-  max-width: 700px;
-  border-radius: var(--radius);
-  overflow: hidden;
-  border: 1px solid rgba(198,167,94,0.15);
   background: var(--black);
+  overflow: hidden;
 }
 
 .hero__machine img {
@@ -718,20 +877,102 @@ em {
   height: auto;
   display: block;
   object-fit: cover;
-  /* Il render ha sfondo scuro — si integra naturalmente */
+  background: var(--black);
+}
+
+/* Gradiente su tutti e 4 i lati: fonde i bordi con il nero */
+.hero__machine::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to bottom,
+      var(--black)   0%,
+      transparent   20%,
+      transparent   80%,
+      var(--black) 100%),
+    linear-gradient(to right,
+      var(--black)   0%,
+      transparent   18%,
+      transparent   82%,
+      var(--black) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Gradiente basso extra: dissolve forte verso la sezione successiva */
+.hero__machine::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 40%;
+  background: linear-gradient(to bottom, transparent, var(--black));
+  pointer-events: none;
+  z-index: 1;
 }
 
 /* ============================================================
-   METODO MACHINE IMAGE
+   METODO MACHINE IMAGE — full bleed mobile
    ============================================================ */
+
+.metodo__visual {
+  position: relative;
+}
+
+/* Mobile: rompe il layout e va full-width */
+@media (max-width: 799px) {
+  .metodo__visual {
+    width: 100vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
 
 .metodo__machine-img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: var(--radius);
-  border: 1px solid rgba(198,167,94,0.15);
   background: var(--black-soft);
+  position: relative;
+}
+
+/* Gradiente su tutti e 4 i lati per metodo */
+.metodo__visual::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to bottom,
+      var(--black-soft)   0%,
+      transparent        22%,
+      transparent        78%,
+      var(--black-soft) 100%),
+    linear-gradient(to right,
+      var(--black-soft)   0%,
+      transparent        18%,
+      transparent        82%,
+      var(--black-soft) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.metodo__visual::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 40%;
+  background: linear-gradient(to bottom, transparent, var(--black-soft));
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Desktop: torna nel suo slot nella griglia, senza full bleed */
+@media (min-width: 800px) {
+  .metodo__visual::before,
+  .metodo__visual::after { display: none; }
+  .metodo__machine-img {
+    border-radius: var(--radius);
+  }
 }
 
 /* ============================================================
@@ -849,7 +1090,7 @@ em {
 
 .chi-siamo {
   padding-block: var(--space-xl);
-  background: #f9f7f4;
+  background: var(--black);  /* bg: nero — alterna con supporto (bianco) */
 }
 
 .chi-siamo .section-title { color: var(--black); }
@@ -1102,7 +1343,6 @@ em {
 .footer {
   padding-block: 2rem;
   background: var(--black);
-  border-top: 1px solid rgba(255,255,255,0.06);
 }
 
 .footer__inner {
@@ -1216,7 +1456,6 @@ em {
   gap: 1rem;
   margin-top: var(--space-lg);
   padding-top: var(--space-md);
-  border-top: 1px solid rgba(255,255,255,0.07);
   opacity: 0;
   transform: translateY(16px);
   transition: opacity 0.5s ease, transform 0.5s ease;
@@ -1227,9 +1466,6 @@ em {
   transform: none;
 }
 
-.section-cta--light {
-  border-top-color: rgba(0,0,0,0.1);
-}
 
 .section-cta__lead {
   font-size: 0.9rem;
@@ -1240,6 +1476,205 @@ em {
 
 .section-cta__lead--dark {
   color: #555;
+}
+
+/* CTA grande — vera e propria call to action visiva */
+.section-cta--big {
+  gap: 1.25rem;
+  padding-top: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+
+.section-cta__headline {
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 5.5vw, 2.2rem);
+  font-weight: 400;
+  color: var(--white);
+  line-height: 1.25;
+  max-width: 520px;
+  text-align: center;
+}
+
+.section-cta--light .section-cta__headline {
+  color: var(--black);
+}
+
+.section-cta__headline em {
+  color: var(--gold);
+  font-style: italic;
+}
+
+.section-cta__sub {
+  font-size: 0.9rem;
+  color: var(--white-muted);
+  line-height: 1.6;
+  text-align: center;
+}
+
+.section-cta--light .section-cta__sub {
+  color: #666;
+}
+
+/* Blocco oro: testo bianco + highlights oro */
+.economia__blocco-oro p {
+  color: var(--white);
+}
+
+.eco-gold {
+  color: var(--gold);
+  font-style: normal;
+}
+
+.economia__blocco-oro-finale {
+  font-size: clamp(1.4rem, 5vw, 2rem) !important;
+  font-weight: 700;
+}
+
+/* Placeholder foto nelle colonne prima/dopo */
+.col-photo-ph {
+  margin-bottom: 1.25rem;
+  border-radius: var(--radius);
+}
+
+/* Placeholder foto supporto */
+.supporto__foto-ph {
+  margin-bottom: var(--space-md);
+  border-radius: var(--radius);
+}
+
+/* Foto reale supporto */
+.supporto__foto {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+  margin-bottom: var(--space-md);
+  object-fit: cover;
+}
+
+/* Placeholder foto chi siamo */
+.chi-siamo__foto-ph {
+  margin: 1.5rem 0 var(--space-md);
+  border-radius: var(--radius);
+}
+
+/* Foto reale chi siamo */
+.chi-siamo__foto {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+  margin: 1.5rem 0 var(--space-md);
+  object-fit: cover;
+}
+
+/* ============================================================
+   ADATTAMENTI SEZIONI BG ALTERNATI
+   ============================================================ */
+
+/* — PROBLEMA su sfondo bianco — */
+.narrativo__corpo--dark p {
+  color: #3a3a3a;
+}
+
+.narrativo__transizione--dark {
+  border-left-color: var(--gold);
+}
+
+.narrativo__transizione--dark span {
+  color: var(--black);
+}
+
+.problema-narrativo .section-title { color: var(--black); }
+.problema-narrativo .section-label { color: var(--gold); }
+
+/* — SUPPORTO su sfondo bianco — */
+.supporto .section-title            { color: var(--black); }
+.supporto .section-label            { color: var(--gold); }
+.supporto__testo p                  { color: #444; }
+.supporto__testo-lead               { color: var(--black) !important; }
+.supporto__item h3                  { color: var(--black); }
+.supporto__item p                   { color: #555; }
+.supporto__icon                     { color: var(--gold-dark); }
+
+/* — CHI SIAMO su sfondo nero — */
+.chi-siamo .section-label           { color: var(--gold); }
+.chi-siamo__corpo p                 { color: var(--white-muted); }
+.chi-siamo__corpo strong            { color: var(--white); }
+.team-card__info strong             { color: var(--white); }
+.team-card__info span               { color: var(--white-muted); }
+
+/* numero-card su sfondo nero: sfondo leggermente diverso per distinguersi */
+.numero-card {
+  background: var(--black-card);
+}
+
+/* — section-cta--big colori su sfondo chiaro — */
+.section-cta--light .section-cta__headline { color: var(--black); }
+.section-cta--light .section-cta__sub      { color: #555; }
+
+/* headline bianca di default (sezioni scure) */
+.section-cta__headline { color: var(--white); }
+
+/* — Visual slot nell'header metodo — */
+.metodo__header-ph {
+  margin-bottom: var(--space-lg);
+  border-radius: var(--radius);
+}
+
+.metodo__header-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+  margin-bottom: var(--space-lg);
+  object-fit: cover;
+}
+
+/* ============================================================
+   MONEY ANIMATION
+   ============================================================ */
+
+.money-anim {
+  position: relative;
+  height: 90px;
+  overflow: hidden;
+  margin-bottom: var(--space-md);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.money-anim span {
+  display: inline-block;
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 5vw, 2.2rem);
+  color: var(--gold);
+  opacity: 0;
+  animation: moneyFloat 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 6px rgba(198,167,94,0.5));
+}
+
+.money-anim span:nth-child(1) { animation-delay: 0.0s; }
+.money-anim span:nth-child(2) { animation-delay: 0.3s; }
+.money-anim span:nth-child(3) { animation-delay: 0.6s; }
+.money-anim span:nth-child(4) { animation-delay: 0.9s; }
+.money-anim span:nth-child(5) { animation-delay: 1.2s; }
+.money-anim span:nth-child(6) { animation-delay: 1.5s; }
+.money-anim span:nth-child(7) { animation-delay: 1.8s; }
+.money-anim span:nth-child(8) { animation-delay: 2.1s; }
+.money-anim span:nth-child(9) { animation-delay: 2.4s; }
+
+@keyframes moneyFloat {
+  0%   { opacity: 0;   transform: translateY(20px) scale(0.8); }
+  25%  { opacity: 1;   transform: translateY(0px)  scale(1);   }
+  75%  { opacity: 0.7; transform: translateY(-30px) scale(1.05); }
+  100% { opacity: 0;   transform: translateY(-60px) scale(0.9); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .money-anim span { animation: none; opacity: 0.6; }
 }
 
 /* ============================================================

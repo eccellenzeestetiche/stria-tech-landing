@@ -1,0 +1,25 @@
+name: Deploy to SiteGround
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy via SCP
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SITEGROUND_HOST }}
+          username: ${{ secrets.SITEGROUND_USERNAME }}
+          key: ${{ secrets.SITEGROUND_PRIVATE_KEY }}
+          port: ${{ secrets.SITEGROUND_PORT }}
+          source: "index.html,style.css,assets"
+          target: ${{ secrets.SITEGROUND_TARGET_DIR }}
+         
