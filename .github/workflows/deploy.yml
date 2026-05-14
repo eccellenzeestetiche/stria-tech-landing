@@ -19,7 +19,8 @@ jobs:
           host: ${{ secrets.SITEGROUND_HOST }}
           username: ${{ secrets.SITEGROUND_USERNAME }}
           key: ${{ secrets.SITEGROUND_PRIVATE_KEY }}
+          passphrase: ${{ secrets.SITEGROUND_PASSPHRASE }}
           port: ${{ secrets.SITEGROUND_PORT }}
           source: "index.html,style.css,assets"
           target: ${{ secrets.SITEGROUND_TARGET_DIR }}
-         
+       
