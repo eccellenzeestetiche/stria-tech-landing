@@ -1193,7 +1193,7 @@ em {
   background: var(--black);  /* bg: nero — alterna con supporto (bianco) */
 }
 
-.chi-siamo .section-title { color: var(--black); }
+.chi-siamo .section-title { color: var(--white); }
 
 .chi-siamo__intro {
   max-width: 680px;
