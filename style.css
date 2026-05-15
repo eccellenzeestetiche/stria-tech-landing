@@ -1731,8 +1731,8 @@ em {
   margin-left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
-  margin-top: calc(var(--space-lg) * 2);
-  padding: var(--space-lg) 0;
+  margin-top: var(--space-md);
+  padding: var(--space-md) 0;
   background: rgba(255,255,255,0.03);
   position: relative;
   z-index: 2;
@@ -1763,16 +1763,20 @@ em {
   padding: 1.25rem 1.5rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: 0.75rem;
 }
 
 .testi-card__foto {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--gold);
   flex-shrink: 0;
+  display: block;
+  margin: 0 auto;
 }
 
 .testi-card__testo {
@@ -1841,6 +1845,134 @@ em {
 
 .sticky-cta__btn:hover {
   background: #1a8c3c;
+}
+
+/* ============================================================
+   DESKTOP LAYOUT (min-width: 900px)
+   ============================================================ */
+
+@media (min-width: 900px) {
+
+  /* Hero — più spazio, headline più grande */
+  .hero__content {
+    padding-block: var(--space-lg);
+    max-width: 780px;
+    margin-inline: auto;
+  }
+
+  .hero__title {
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    margin-bottom: 2rem;
+  }
+
+  .hero__sub {
+    font-size: 1.15rem;
+    max-width: 600px;
+    margin-inline: auto;
+  }
+
+  .hero__body {
+    font-size: 1rem;
+    max-width: 520px;
+    margin-inline: auto;
+  }
+
+  /* Machine hero — altezza massima contenuta */
+  .hero__machine img {
+    max-height: 520px;
+    object-fit: contain;
+  }
+
+  /* Testimonianze — card più larghe su desktop */
+  .testi-card {
+    width: 320px;
+  }
+
+  /* Prima/Dopo — colonne più spaziose */
+  .prima-dopo__col {
+    padding: 2.5rem 2.25rem;
+  }
+
+  /* Economia — testo più grande */
+  .economia__corpo p {
+    font-size: 1.1rem;
+  }
+
+  .economia__counter-num {
+    font-size: clamp(4rem, 8vw, 7rem);
+  }
+
+  /* Metodo — layout affiancato steps + immagine */
+  .metodo__layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+    align-items: center;
+  }
+
+  /* Sezioni — più padding verticale */
+  .prima-dopo,
+  .economia,
+  .problema-narrativo,
+  .metodo,
+  .supporto,
+  .chi-siamo {
+    padding-block: calc(var(--space-xl) * 1.2);
+  }
+
+  /* Section titles — più grandi */
+  .section-title {
+    font-size: clamp(2rem, 3.5vw, 3rem);
+  }
+
+  /* Supporto — più spazio nella lista */
+  .supporto__item {
+    gap: 1.5rem;
+  }
+
+  /* Chi siamo — testo più grande */
+  .chi-siamo__corpo p {
+    font-size: 1rem;
+    line-height: 1.85;
+  }
+
+  /* Team card — foto più alta su desktop */
+  .team-card__photo {
+    aspect-ratio: 2 / 3;
+  }
+
+  /* Numero cards — più padding */
+  .numero-card {
+    padding: 2rem 2.25rem;
+  }
+
+  .numero-card__num {
+    font-size: 3rem;
+  }
+
+  /* Form — max width più ampio */
+  .cta-finale__inner {
+    max-width: 780px;
+  }
+
+  .cta-form__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  /* Sticky CTA — più piccola su desktop, a destra */
+  .sticky-cta {
+    justify-content: flex-end;
+    padding-right: 2rem;
+  }
+
+  .sticky-cta__btn {
+    width: auto;
+    max-width: none;
+    padding: 0.85rem 2.5rem;
+  }
+
 }
 
 /* ============================================================
