@@ -61,48 +61,67 @@
         </div>
       </div>
 
-      <!-- SLIDER TESTIMONIANZE -->
-      <div class="testi-slider" id="testi-slider" aria-label="Testimonianze estetiste Stria-Tech">
-        <div class="testi-slider__track">
+      <!-- SLIDER TESTIMONIANZE — marquee infinito -->
+      <div class="testi-marquee" aria-label="Testimonianze estetiste Stria-Tech">
+        <div class="testi-marquee__track">
 
-          <div class="testi-slide">
-            <div class="testi-slide__foto-wrap">
-              <img src="./assets/team/team-2.jpg" alt="Lorella Tartaglia" class="testi-slide__foto">
-            </div>
-            <div class="testi-slide__content">
-              <p class="testi-slide__testo">"Da quando ho introdotto Stria-Tech nel mio centro, le clienti tornano con le amiche. Non ho più bisogno di spiegare cosa facciamo: i risultati parlano da soli."</p>
-              <p class="testi-slide__nome">Lorella Tartaglia</p>
-              <p class="testi-slide__centro">Centro Estetico Lorella, Milano</p>
-            </div>
+          <div class="testi-card">
+            <img src="./assets/team/team-2.jpg" alt="Lorella Tartaglia" class="testi-card__foto">
+            <p class="testi-card__testo">"I risultati si vedono. Le clienti tornano e portano le amiche."</p>
+            <p class="testi-card__nome">Lorella Tartaglia</p>
+            <p class="testi-card__centro">Centro Estetico Lorella, Milano</p>
           </div>
 
-          <div class="testi-slide">
-            <div class="testi-slide__foto-wrap">
-              <img src="./assets/team/team-3.jpg" alt="Mario Perciavalle" class="testi-slide__foto">
-            </div>
-            <div class="testi-slide__content">
-              <p class="testi-slide__testo">"Finalmente un metodo strutturato. Prima improvvisavo, ora ho un protocollo che funziona. Le clienti vedono i risultati già dopo le prime sedute."</p>
-              <p class="testi-slide__nome">Mario Perciavalle</p>
-              <p class="testi-slide__centro">Istituto Perciavalle, Napoli</p>
-            </div>
+          <div class="testi-card">
+            <img src="./assets/team/team-3.jpg" alt="Mario Perciavalle" class="testi-card__foto">
+            <p class="testi-card__testo">"Finalmente un protocollo che funziona davvero, seduta dopo seduta."</p>
+            <p class="testi-card__nome">Mario Perciavalle</p>
+            <p class="testi-card__centro">Istituto Perciavalle, Napoli</p>
           </div>
 
-          <div class="testi-slide">
-            <div class="testi-slide__foto-wrap">
-              <img src="./assets/team/team-4.jpg" alt="Nicola Amura" class="testi-slide__foto">
-            </div>
-            <div class="testi-slide__content">
-              <p class="testi-slide__testo">"Ho valutato tante tecnologie. Stria-Tech è l'unica che unisce il macchinario, i cosmetici e il supporto reale. È un sistema completo, non il solito acquisto."</p>
-              <p class="testi-slide__nome">Nicola Amura</p>
-              <p class="testi-slide__centro">Beauty Lab Amura, Roma</p>
-            </div>
+          <div class="testi-card">
+            <img src="./assets/team/team-4.jpg" alt="Nicola Amura" class="testi-card__foto">
+            <p class="testi-card__testo">"Non è il solito macchinario. È un sistema completo che cambia il centro."</p>
+            <p class="testi-card__nome">Nicola Amura</p>
+            <p class="testi-card__centro">Beauty Lab Amura, Roma</p>
           </div>
 
-        </div>
-        <div class="testi-slider__dots">
-          <button class="testi-dot testi-dot--active" aria-label="Testimonianza 1"></button>
-          <button class="testi-dot" aria-label="Testimonianza 2"></button>
-          <button class="testi-dot" aria-label="Testimonianza 3"></button>
+          <div class="testi-card">
+            <img src="./assets/team/team-1.jpg" alt="Andrea Cetti" class="testi-card__foto">
+            <p class="testi-card__testo">"Stria-Tech mi ha dato una risposta concreta da dare alle clienti sulle smagliature."</p>
+            <p class="testi-card__nome">Andrea Cetti</p>
+            <p class="testi-card__centro">Eccellenze Estetiche, Italia</p>
+          </div>
+
+          <!-- Duplicato per loop seamless -->
+          <div class="testi-card" aria-hidden="true">
+            <img src="./assets/team/team-2.jpg" alt="" class="testi-card__foto">
+            <p class="testi-card__testo">"I risultati si vedono. Le clienti tornano e portano le amiche."</p>
+            <p class="testi-card__nome">Lorella Tartaglia</p>
+            <p class="testi-card__centro">Centro Estetico Lorella, Milano</p>
+          </div>
+
+          <div class="testi-card" aria-hidden="true">
+            <img src="./assets/team/team-3.jpg" alt="" class="testi-card__foto">
+            <p class="testi-card__testo">"Finalmente un protocollo che funziona davvero, seduta dopo seduta."</p>
+            <p class="testi-card__nome">Mario Perciavalle</p>
+            <p class="testi-card__centro">Istituto Perciavalle, Napoli</p>
+          </div>
+
+          <div class="testi-card" aria-hidden="true">
+            <img src="./assets/team/team-4.jpg" alt="" class="testi-card__foto">
+            <p class="testi-card__testo">"Non è il solito macchinario. È un sistema completo che cambia il centro."</p>
+            <p class="testi-card__nome">Nicola Amura</p>
+            <p class="testi-card__centro">Beauty Lab Amura, Roma</p>
+          </div>
+
+          <div class="testi-card" aria-hidden="true">
+            <img src="./assets/team/team-1.jpg" alt="" class="testi-card__foto">
+            <p class="testi-card__testo">"Stria-Tech mi ha dato una risposta concreta da dare alle clienti sulle smagliature."</p>
+            <p class="testi-card__nome">Andrea Cetti</p>
+            <p class="testi-card__centro">Eccellenze Estetiche, Italia</p>
+          </div>
+
         </div>
       </div>
 
@@ -235,6 +254,7 @@
         <p class="economia__counter-label">Fatturato medio aggiuntivo<br>per un centro Stria-Tech</p>
         <div class="economia__counter-num" data-target="15000">0 €</div>
         <p class="economia__counter-sub">al mese</p>
+        <p class="economia__counter-disclaimer">*dati rilevati sui nostri 3 centri di proprietà</p>
       </div>
 
       <div class="economia__chiusura">
@@ -470,11 +490,11 @@
       <div class="team-grid">
         <div class="team-card">
           <div class="team-card__photo">
-            <img src="./assets/team/team-1.jpg" alt="Andrea Cetti" loading="lazy" onerror="this.parentElement.classList.add('team-card__photo--missing')">
+            <img src="./assets/team/team-4.jpg" alt="Nicola Amura" loading="lazy" onerror="this.parentElement.classList.add('team-card__photo--missing')">
           </div>
           <div class="team-card__info">
-            <strong>Andrea Cetti</strong>
-            <span>Esperto di Marketing in Estetica</span>
+            <strong>Nicola Amura</strong>
+            <span>Esperto di Tecnologie Estetiche</span>
           </div>
         </div>
         <div class="team-card">
@@ -497,11 +517,11 @@
         </div>
         <div class="team-card">
           <div class="team-card__photo">
-            <img src="./assets/team/team-4.jpg" alt="Nicola Amura" loading="lazy" onerror="this.parentElement.classList.add('team-card__photo--missing')">
+            <img src="./assets/team/team-1.jpg" alt="Andrea Cetti" loading="lazy" onerror="this.parentElement.classList.add('team-card__photo--missing')">
           </div>
           <div class="team-card__info">
-            <strong>Nicola Amura</strong>
-            <span>Esperto di Tecnologie in Estetica</span>
+            <strong>Andrea Cetti</strong>
+            <span>Esperto di Marketing in Estetica</span>
           </div>
         </div>
       </div>
@@ -646,32 +666,17 @@
       });
     }
 
-    // ── Slider testimonianze ──────────────────────────────────
-    (function () {
-      const slider = document.getElementById('testi-slider');
-      if (!slider) return;
-      const track = slider.querySelector('.testi-slider__track');
-      const slides = slider.querySelectorAll('.testi-slide');
-      const dots = slider.querySelectorAll('.testi-dot');
-      const total = slides.length;
-      let current = 0, timer;
-
-      function goTo(i) {
-        current = (i + total) % total;
-        track.style.transform = `translateX(-${current * 100}%)`;
-        dots.forEach((d, j) => d.classList.toggle('testi-dot--active', j === current));
-      }
-      function startAuto() { timer = setInterval(() => goTo(current + 1), 5000); }
-      dots.forEach((d, i) => d.addEventListener('click', () => { clearInterval(timer); goTo(i); startAuto(); }));
-
-      let sx = 0;
-      track.addEventListener('touchstart', e => { sx = e.touches[0].clientX; }, { passive: true });
-      track.addEventListener('touchend', e => {
-        const diff = sx - e.changedTouches[0].clientX;
-        if (Math.abs(diff) > 40) { clearInterval(timer); diff > 0 ? goTo(current+1) : goTo(current-1); startAuto(); }
-      }, { passive: true });
-      startAuto();
-    })();
+    // ── Scroll to form — offset per nav sticky ────────────────
+    document.querySelectorAll('a[href="#contatto"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.getElementById('contatto');
+        if (!target) return;
+        const navH = document.querySelector('.nav')?.offsetHeight || 0;
+        const y = target.getBoundingClientRect().top + window.scrollY - navH;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      });
+    });
 
     // ── Carosello ─────────────────────────────────────────────
     (function () {
