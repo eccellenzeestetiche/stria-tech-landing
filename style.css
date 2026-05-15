@@ -1795,7 +1795,7 @@ em {
    SLIDER TESTIMONIANZE
    ============================================================ */
 
-/* Marquee testimonianze — scorre infinito */
+/* Marquee testimonianze — scorre infinito, sfondo bianco */
 .testi-marquee {
   width: 100vw;
   margin-left: 50%;
@@ -1803,14 +1803,14 @@ em {
   overflow: hidden;
   margin-top: var(--space-md);
   padding: var(--space-md) 0;
-  background: rgba(255,255,255,0.03);
+  background: #f9f7f4;
   position: relative;
   z-index: 2;
 }
 
 .testi-marquee__track {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.25rem;
   width: max-content;
   animation: marqueeScroll 28s linear infinite;
 }
@@ -1827,8 +1827,8 @@ em {
 .testi-card {
   flex-shrink: 0;
   width: 280px;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(198,167,94,0.15);
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.08);
   border-radius: var(--radius);
   padding: 1.25rem 1.5rem;
   display: flex;
@@ -1836,6 +1836,7 @@ em {
   align-items: center;
   text-align: center;
   gap: 0.75rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
 
 .testi-card__foto {
@@ -1852,7 +1853,7 @@ em {
 .testi-card__testo {
   font-family: var(--font-serif);
   font-size: 0.92rem;
-  color: var(--white-muted);
+  color: #555;
   line-height: 1.6;
   font-style: italic;
 }
@@ -1860,14 +1861,14 @@ em {
 .testi-card__nome {
   font-size: 0.75rem;
   font-weight: 700;
-  color: var(--white);
+  color: var(--black);
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .testi-card__centro {
   font-size: 0.7rem;
-  color: var(--gold);
+  color: var(--gold-dark);
   letter-spacing: 0.03em;
   margin-top: -0.4rem;
 }
@@ -1946,10 +1947,12 @@ em {
 .bonus-table {
   max-width: 700px;
   margin-inline: auto;
-  border-radius: var(--radius);
+  border-radius: 6px;
   overflow: hidden;
-  border: 1px solid rgba(198,167,94,0.2);
+  border: 1px solid rgba(0,0,0,0.1);
   margin-bottom: var(--space-lg);
+  background: #ffffff;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.35);
 }
 
 .bonus-table__header,
@@ -1959,23 +1962,46 @@ em {
 }
 
 .bonus-table__header {
-  background: rgba(198,167,94,0.08);
-  border-bottom: 1px solid rgba(198,167,94,0.25);
+  background: var(--black);
+  border-bottom: none;
 }
 
 .bonus-table__row {
-  border-bottom: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(0,0,0,0.07);
 }
 
 .bonus-table__row:last-child {
   border-bottom: none;
 }
 
+/* Etichetta gruppo bonus */
+.bonus-table__group-label {
+  background: rgba(198,167,94,0.12);
+  border-top: 1px solid rgba(198,167,94,0.3);
+  border-bottom: 1px solid rgba(198,167,94,0.3);
+  padding: 0.45rem 0.9rem;
+  text-align: center;
+}
+
+.bonus-table__group-label span {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+}
+
+/* Separatore tra bonus e righe base */
+.bonus-table__divider {
+  height: 1px;
+  background: rgba(0,0,0,0.1);
+}
+
 .bonus-table__cell {
-  padding: 0.8rem 0.9rem;
-  font-size: 0.83rem;
+  padding: 0.85rem 1rem;
+  font-size: 0.85rem;
   line-height: 1.45;
-  color: var(--white-muted);
+  color: #555;
   display: flex;
   align-items: center;
 }
@@ -1985,8 +2011,8 @@ em {
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--white);
-  padding: 0.7rem 0.9rem;
+  color: rgba(255,255,255,0.7);
+  padding: 0.8rem 1rem;
 }
 
 .bonus-table__header .bonus-table__cell--stria {
@@ -2000,45 +2026,50 @@ em {
   font-weight: 600;
 }
 
-/* Righe evidenziate — il bonus killer */
+/* Righe bonus — evidenziate in cima */
 .bonus-table__row--highlight {
-  background: rgba(198,167,94,0.06);
-  box-shadow: inset 3px 0 0 var(--gold);
+  background: #fffaf3;
+  box-shadow: inset 4px 0 0 var(--gold);
 }
 
 .bonus-table__row--highlight .bonus-table__cell--feature {
-  color: var(--white);
+  color: #1a1a1a;
   font-weight: 600;
+}
+
+/* Riga clienti — numeri in evidenza */
+.bonus-table__row--clienti .bonus-table__cell--stria,
+.bonus-table__row--clienti .bonus-table__cell--altri {
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Numeri grandi per la riga clienti */
+.bonus-num {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #bbb;
+  line-height: 1;
+}
+
+.bonus-num--good {
+  color: var(--gold-dark);
+  font-size: 1.15rem;
 }
 
 /* Riga brutale finale */
 .bonus-table__row--killer {
-  background: rgba(255,255,255,0.02);
+  background: #fafafa;
 }
 
 .bonus-table__row--killer .bonus-table__cell--feature {
-  color: rgba(255,255,255,0.45);
+  color: #888;
   font-style: italic;
 }
 
-.bonus-si { color: var(--gold); }
-.bonus-no  { color: #666; }
-
-.bonus-lancio__testo {
-  max-width: 620px;
-  margin-inline: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 0.85rem;
-  margin-bottom: var(--space-md);
-  text-align: center;
-}
-
-.bonus-lancio__testo p {
-  font-size: clamp(0.95rem, 2vw, 1.05rem);
-  color: var(--white-muted);
-  line-height: 1.75;
-}
+.bonus-si { color: var(--gold-dark); font-weight: 600; }
+.bonus-no  { color: #c0c0c0; }
 
 .bonus-lancio__nota {
   font-size: 0.72rem;
@@ -2047,16 +2078,18 @@ em {
   line-height: 1.6;
 }
 
-/* Adattamenti mobile molto piccoli */
+/* Adattamenti mobile */
 @media (max-width: 480px) {
   .bonus-table__cell {
-    padding: 0.65rem 0.6rem;
+    padding: 0.7rem 0.65rem;
     font-size: 0.78rem;
   }
   .bonus-table__header .bonus-table__cell {
     font-size: 0.62rem;
-    padding: 0.6rem 0.6rem;
+    padding: 0.65rem 0.65rem;
   }
+  .bonus-num { font-size: 0.95rem; }
+  .bonus-num--good { font-size: 1rem; }
 }
 
 /* ============================================================
