@@ -1918,6 +1918,148 @@ em {
 }
 
 /* ============================================================
+   BONUS LANCIO
+   ============================================================ */
+
+.bonus-lancio {
+  padding-block: var(--space-xl);
+  background: var(--black-mid);
+  background-image:
+    radial-gradient(ellipse 70% 40% at 50% 0%, rgba(198,167,94,0.06) 0%, transparent 55%);
+}
+
+.bonus-lancio__headline {
+  margin-bottom: var(--space-md);
+}
+
+.bonus-lancio__tabella-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.bonus-table {
+  max-width: 700px;
+  margin-inline: auto;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid rgba(198,167,94,0.2);
+  margin-bottom: var(--space-lg);
+}
+
+.bonus-table__header,
+.bonus-table__row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.bonus-table__header {
+  background: rgba(198,167,94,0.08);
+  border-bottom: 1px solid rgba(198,167,94,0.25);
+}
+
+.bonus-table__row {
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.bonus-table__row:last-child {
+  border-bottom: none;
+}
+
+.bonus-table__cell {
+  padding: 0.8rem 0.9rem;
+  font-size: 0.83rem;
+  line-height: 1.45;
+  color: var(--white-muted);
+  display: flex;
+  align-items: center;
+}
+
+.bonus-table__header .bonus-table__cell {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--white);
+  padding: 0.7rem 0.9rem;
+}
+
+.bonus-table__header .bonus-table__cell--stria {
+  color: var(--gold);
+}
+
+.bonus-table__cell--stria,
+.bonus-table__cell--altri {
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Righe evidenziate — il bonus killer */
+.bonus-table__row--highlight {
+  background: rgba(198,167,94,0.06);
+  box-shadow: inset 3px 0 0 var(--gold);
+}
+
+.bonus-table__row--highlight .bonus-table__cell--feature {
+  color: var(--white);
+  font-weight: 600;
+}
+
+/* Riga brutale finale */
+.bonus-table__row--killer {
+  background: rgba(255,255,255,0.02);
+}
+
+.bonus-table__row--killer .bonus-table__cell--feature {
+  color: rgba(255,255,255,0.45);
+  font-style: italic;
+}
+
+.bonus-si { color: var(--gold); }
+.bonus-no  { color: #666; }
+
+.bonus-lancio__testo {
+  max-width: 620px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: var(--space-md);
+  text-align: center;
+}
+
+.bonus-lancio__testo p {
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  color: var(--white-muted);
+  line-height: 1.75;
+}
+
+.bonus-lancio__nota {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+}
+
+/* Adattamenti mobile molto piccoli */
+@media (max-width: 480px) {
+  .bonus-table__cell {
+    padding: 0.65rem 0.6rem;
+    font-size: 0.78rem;
+  }
+  .bonus-table__header .bonus-table__cell {
+    font-size: 0.62rem;
+    padding: 0.6rem 0.6rem;
+  }
+}
+
+/* ============================================================
    DESKTOP LAYOUT (min-width: 900px)
    ============================================================ */
 
