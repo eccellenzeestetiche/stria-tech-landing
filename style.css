@@ -1736,13 +1736,45 @@ em {
   border-radius: var(--radius);
 }
 
+/* Full-bleed con dissolvenza sopra e sotto */
+.metodo__header-wrap {
+  position: relative;
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  margin-bottom: var(--space-lg);
+}
+
 .metodo__header-img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: var(--radius);
-  margin-bottom: var(--space-lg);
   object-fit: cover;
+}
+
+.metodo__header-wrap::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to bottom,
+      var(--black-soft) 0%,
+      transparent       18%,
+      transparent       82%,
+      var(--black-soft) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.metodo__header-wrap::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 35%;
+  background: linear-gradient(to bottom, transparent, var(--black-soft));
+  pointer-events: none;
+  z-index: 2;
 }
 
 /* ============================================================
