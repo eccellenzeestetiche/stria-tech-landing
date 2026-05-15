@@ -209,37 +209,6 @@
         <h2 class="section-title section-title--center">Com'è adesso. Come potrebbe essere.</h2>
       </div>
 
-      <!-- CAROSELLO BEFORE / AFTER -->
-      <div class="carousel" id="ba-carousel" aria-label="Prima e dopo Stria-Tech">
-        <div class="carousel__track-wrap">
-          <div class="carousel__track">
-            <div class="carousel__slide">
-              <img src="./assets/visuals/before-after.jpg" alt="Prima e dopo — zona smagliature generali" loading="lazy">
-              <p class="carousel__caption">Zona cosce · Smagliature bianche · dopo ciclo completo</p>
-            </div>
-            <div class="carousel__slide">
-              <img src="./assets/visuals/ba-slide-2.jpg" alt="Prima e dopo — zona addome" loading="lazy">
-              <p class="carousel__caption">Zona addome · Smagliature post-gravidanza · dopo ciclo completo</p>
-            </div>
-            <div class="carousel__slide">
-              <img src="./assets/visuals/ba-slide-3.jpg" alt="Prima e dopo — zona coscia" loading="lazy">
-              <p class="carousel__caption">Zona coscia · Smagliature recenti (rosse) · dopo ciclo completo</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel__btn carousel__btn--prev" aria-label="Precedente">
-          <svg viewBox="0 0 24 24" width="20" height="20"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <button class="carousel__btn carousel__btn--next" aria-label="Successivo">
-          <svg viewBox="0 0 24 24" width="20" height="20"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="carousel__dots" role="tablist">
-          <button class="carousel__dot carousel__dot--active" aria-label="Slide 1" role="tab"></button>
-          <button class="carousel__dot" aria-label="Slide 2" role="tab"></button>
-          <button class="carousel__dot" aria-label="Slide 3" role="tab"></button>
-        </div>
-      </div>
-
       <div class="prima-dopo__grid">
         <div class="prima-dopo__col prima-dopo__col--prima">
           <div class="col-header">
@@ -745,40 +714,6 @@
       });
     });
 
-    // ── Carosello ─────────────────────────────────────────────
-    (function () {
-      const carousel = document.getElementById('ba-carousel');
-      if (!carousel) return;
-      const track = carousel.querySelector('.carousel__track');
-      const slides = carousel.querySelectorAll('.carousel__slide');
-      const dots = carousel.querySelectorAll('.carousel__dot');
-      const btnPrev = carousel.querySelector('.carousel__btn--prev');
-      const btnNext = carousel.querySelector('.carousel__btn--next');
-      const total = slides.length;
-      let current = 0, timer;
-
-      function goTo(i) {
-        current = (i + total) % total;
-        track.style.transform = `translateX(-${current * 100}%)`;
-        dots.forEach((d, j) => d.classList.toggle('carousel__dot--active', j === current));
-      }
-      function startAuto() { timer = setInterval(() => goTo(current + 1), 4500); }
-      function stopAuto()  { clearInterval(timer); }
-
-      btnNext.addEventListener('click', () => { stopAuto(); goTo(current + 1); startAuto(); });
-      btnPrev.addEventListener('click', () => { stopAuto(); goTo(current - 1); startAuto(); });
-      dots.forEach((d, i) => d.addEventListener('click', () => { stopAuto(); goTo(i); startAuto(); }));
-
-      let startX = 0;
-      track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
-      track.addEventListener('touchend', e => {
-        const diff = startX - e.changedTouches[0].clientX;
-        if (Math.abs(diff) > 40) { stopAuto(); diff > 0 ? goTo(current+1) : goTo(current-1); startAuto(); }
-      }, { passive: true });
-      carousel.addEventListener('mouseenter', stopAuto);
-      carousel.addEventListener('mouseleave', startAuto);
-      startAuto();
-    })();
   </script>
 
 </body>
