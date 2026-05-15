@@ -672,6 +672,18 @@ em {
   line-height: 1.75;
 }
 
+.step__highlight {
+  color: var(--white) !important;
+  font-weight: 600;
+  border-left: 2px solid var(--gold);
+  padding-left: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.step__highlight strong {
+  color: var(--gold);
+}
+
 .metodo__connector {
   width: 1px; height: 40px;
   background: linear-gradient(to bottom, rgba(198,167,94,0.3), rgba(198,167,94,0.05));
