@@ -402,9 +402,9 @@ em {
   border: none;
 }
 
-.hero__video-wrap iframe {
+.hero__video-wrap iframe,
+.hero__video-wrap wistia-player {
   width: 100%;
-  aspect-ratio: 16/9;
   display: block;
   border: none;
 }
