@@ -1924,11 +1924,13 @@ em {
 
 .bonus-lancio {
   padding-block: var(--space-xl);
-  background: #f9f7f4;
+  background: var(--black-soft);
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(198,167,94,0.07) 0%, transparent 60%);
 }
 
 .bonus-lancio__headline {
-  color: var(--black);
+  color: var(--white);
   margin-bottom: 1rem;
 }
 
@@ -1960,7 +1962,7 @@ em {
   border: 1px solid rgba(0,0,0,0.1);
   margin-bottom: var(--space-lg);
   background: #ffffff;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  box-shadow: 0 8px 48px rgba(0,0,0,0.45);
 }
 
 .bonus-table__header,
@@ -2078,41 +2080,44 @@ em {
 .bonus-si { color: var(--gold-dark); font-weight: 600; }
 .bonus-no  { color: #c0c0c0; }
 
-/* Callout testo — card scura sotto la tabella */
+/* Callout testo — su sfondo nero, stile narrativo con accento oro */
 .bonus-lancio__testo {
-  max-width: 640px;
+  max-width: 600px;
   margin-inline: auto;
-  background: var(--black);
-  border-radius: 6px;
   padding: 1.75rem 2rem;
-  border-left: 4px solid var(--gold);
+  border-left: 3px solid var(--gold);
+  background: rgba(198,167,94,0.04);
+  border-radius: 0 var(--radius) var(--radius) 0;
   margin-bottom: var(--space-lg);
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
+  gap: 1rem;
 }
 
 .bonus-lancio__testo p {
-  font-size: clamp(0.92rem, 2vw, 1rem);
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
   color: var(--white-muted);
-  line-height: 1.75;
+  line-height: 1.8;
 }
 
 .bonus-lancio__testo strong {
   color: var(--white);
+  font-weight: 700;
 }
 
 .bonus-lancio__testo-finale {
   font-family: var(--font-serif);
-  font-size: clamp(1rem, 2.5vw, 1.1rem) !important;
+  font-size: clamp(1rem, 2.5vw, 1.15rem) !important;
   color: var(--gold) !important;
   font-style: italic;
-  padding-top: 0.25rem;
+  border-top: 1px solid rgba(198,167,94,0.2);
+  padding-top: 0.85rem;
+  margin-top: 0.25rem;
 }
 
 .bonus-lancio__nota {
   font-size: 0.72rem;
-  color: rgba(0,0,0,0.35);
+  color: rgba(255,255,255,0.3);
   letter-spacing: 0.03em;
   line-height: 1.6;
 }
