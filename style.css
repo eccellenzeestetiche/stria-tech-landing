@@ -294,7 +294,7 @@ em {
   margin-inline: auto;
 }
 
-/* ── Hero claims block ── */
+/* ── Hero claims block ─── */
 .hero__claims {
   display: flex;
   flex-direction: column;
