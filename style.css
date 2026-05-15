@@ -1302,6 +1302,7 @@ em {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+  margin-top: var(--space-lg);
 }
 
 @media (min-width: 640px) {
