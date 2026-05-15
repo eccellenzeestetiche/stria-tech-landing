@@ -390,24 +390,19 @@ em {
   margin: 2.5rem auto 0;
   border-radius: var(--radius);
   overflow: hidden;
-  border: 1px solid rgba(198,167,94,0.2);
-  background: var(--black-card);
+  border: 2px solid var(--gold);
+  box-shadow: 0 0 0 1px rgba(198,167,94,0.15), 0 8px 32px rgba(0,0,0,0.5);
+  background: var(--black);
 }
 
-.hero__video-ph {
-  aspect-ratio: 16/9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--black-card);
-  border: 1px dashed rgba(198,167,94,0.25);
-  color: rgba(198,167,94,0.5);
-  font-size: 0.9rem;
-  letter-spacing: 0.05em;
+.hero__video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: none;
 }
 
-.hero__video-wrap iframe,
-.hero__video-wrap video {
+.hero__video-wrap iframe {
   width: 100%;
   aspect-ratio: 16/9;
   display: block;
