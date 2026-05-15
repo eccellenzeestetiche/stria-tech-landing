@@ -1433,6 +1433,17 @@ em {
   margin-top: 0.25rem;
 }
 
+.cta-booking {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.cta-booking iframe {
+  width: 100%;
+  border: none;
+  display: block;
+}
+
 /* ============================================================
    FOOTER
    ============================================================ */
