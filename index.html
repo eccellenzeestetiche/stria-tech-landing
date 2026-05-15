@@ -12,7 +12,9 @@
   <!-- NAV -->
   <header class="nav">
     <div class="nav__inner container">
-      <a href="#" class="nav__logo">STRIA<span>TECH</span></a>
+      <a href="#" class="nav__logo-wrap">
+        <span class="nav__logo">STRIA<span>TECH</span></span>
+      </a>
       <a href="#contatto" class="btn btn--green btn--sm" style="background:#22a84a;border-color:#22a84a;color:#fff;">Prenota consulenza</a>
     </div>
   </header>
@@ -58,6 +60,52 @@
           <img src="./assets/visuals/machine-render.jpg" alt="Dispositivo Stria-Tech" loading="lazy">
         </div>
       </div>
+
+      <!-- SLIDER TESTIMONIANZE -->
+      <div class="testi-slider" id="testi-slider" aria-label="Testimonianze estetiste Stria-Tech">
+        <div class="testi-slider__track">
+
+          <div class="testi-slide">
+            <div class="testi-slide__foto-wrap">
+              <img src="./assets/team/team-2.jpg" alt="Lorella Tartaglia" class="testi-slide__foto">
+            </div>
+            <div class="testi-slide__content">
+              <p class="testi-slide__testo">"Da quando ho introdotto Stria-Tech nel mio centro, le clienti tornano con le amiche. Non ho più bisogno di spiegare cosa facciamo: i risultati parlano da soli."</p>
+              <p class="testi-slide__nome">Lorella Tartaglia</p>
+              <p class="testi-slide__centro">Centro Estetico Lorella, Milano</p>
+            </div>
+          </div>
+
+          <div class="testi-slide">
+            <div class="testi-slide__foto-wrap">
+              <img src="./assets/team/team-3.jpg" alt="Mario Perciavalle" class="testi-slide__foto">
+            </div>
+            <div class="testi-slide__content">
+              <p class="testi-slide__testo">"Finalmente un metodo strutturato. Prima improvvisavo, ora ho un protocollo che funziona. Le clienti vedono i risultati già dopo le prime sedute."</p>
+              <p class="testi-slide__nome">Mario Perciavalle</p>
+              <p class="testi-slide__centro">Istituto Perciavalle, Napoli</p>
+            </div>
+          </div>
+
+          <div class="testi-slide">
+            <div class="testi-slide__foto-wrap">
+              <img src="./assets/team/team-4.jpg" alt="Nicola Amura" class="testi-slide__foto">
+            </div>
+            <div class="testi-slide__content">
+              <p class="testi-slide__testo">"Ho valutato tante tecnologie. Stria-Tech è l'unica che unisce il macchinario, i cosmetici e il supporto reale. È un sistema completo, non il solito acquisto."</p>
+              <p class="testi-slide__nome">Nicola Amura</p>
+              <p class="testi-slide__centro">Beauty Lab Amura, Roma</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="testi-slider__dots">
+          <button class="testi-dot testi-dot--active" aria-label="Testimonianza 1"></button>
+          <button class="testi-dot" aria-label="Testimonianza 2"></button>
+          <button class="testi-dot" aria-label="Testimonianza 3"></button>
+        </div>
+      </div>
+
     </div>
     <div class="hero__scroll"><span></span></div>
   </section>
@@ -170,10 +218,7 @@
         Non una parte. <strong>Tutto.</strong></p>
       </div>
 
-      <!-- VISUAL 1 — sostituisci con <img src="..." class="economia__visual-img"> -->
-      <div class="img-ph img-ph--dark economia__visual-ph" style="--ph-ratio:45%">
-        <span>📷 Visual economia — 1<br><small>es. dato visivo, grafico impatto mercato</small></span>
-      </div>
+      <img src="./assets/visuals/economia-1.png" class="economia__visual-img" alt="Opportunità di mercato Stria-Tech" loading="lazy">
 
       <div class="economia__blocco-oro">
         <p>Il centro che adotta Stria-Tech per primo nella sua zona diventa il <em class="eco-gold">riferimento assoluto</em> per le smagliature in quell'area.</p>
@@ -183,10 +228,7 @@
         <p class="economia__blocco-oro-finale"><em class="eco-gold">Lo è e basta.</em></p>
       </div>
 
-      <!-- VISUAL 2 — sostituisci con <img src="..." class="economia__visual-img"> -->
-      <div class="img-ph img-ph--dark economia__visual-ph" style="--ph-ratio:45%">
-        <span>📷 Visual economia — 2<br><small>es. ambiente centro premium, risultato forte</small></span>
-      </div>
+      <img src="./assets/visuals/economia-2.png" class="economia__visual-img" alt="Centro estetico Stria-Tech" loading="lazy">
 
       <!-- Contatore -->
       <div class="economia__counter">
@@ -428,38 +470,38 @@
       <div class="team-grid">
         <div class="team-card">
           <div class="team-card__photo">
-            <img src="./assets/team/team-1.jpg" alt="Membro del team Stria-Tech" loading="lazy" onerror="this.parentElement.classList.add('team-card__photo--missing')">
+            <img src="./assets/team/team-1.jpg" alt="Andrea Cetti" loading="lazy" onerror="this.parentElement.classList.add('team-card__photo--missing')">
           </div>
           <div class="team-card__info">
-            <strong>Nome Cognome</strong>
+            <strong>Andrea Cetti</strong>
             <span>Esperto di Marketing in Estetica</span>
           </div>
         </div>
         <div class="team-card">
           <div class="team-card__photo">
-            <img src="./assets/team/team-2.jpg" alt="Membro del team Stria-Tech" loading="lazy" onerror="this.parentElement.classList.add('team-card__photo--missing')">
+            <img src="./assets/team/team-2.jpg" alt="Lorella Tartaglia" loading="lazy" onerror="this.parentElement.classList.add('team-card__photo--missing')">
           </div>
           <div class="team-card__info">
-            <strong>Nome Cognome</strong>
-            <span>Co-founder · Responsabile formazione e centri</span>
+            <strong>Lorella Tartaglia</strong>
+            <span>Titolare di 3 istituti</span>
           </div>
         </div>
         <div class="team-card">
           <div class="team-card__photo">
-            <img src="./assets/team/team-3.jpg" alt="Membro del team Stria-Tech" loading="lazy" onerror="this.parentElement.classList.add('team-card__photo--missing')">
+            <img src="./assets/team/team-3.jpg" alt="Mario Perciavalle" loading="lazy" onerror="this.parentElement.classList.add('team-card__photo--missing')">
           </div>
           <div class="team-card__info">
-            <strong>Nome Cognome</strong>
-            <span>Responsabile protocolli e ricerca</span>
+            <strong>Mario Perciavalle</strong>
+            <span>Esperto di Vendita</span>
           </div>
         </div>
         <div class="team-card">
           <div class="team-card__photo">
-            <img src="./assets/team/team-4.jpg" alt="Membro del team Stria-Tech" loading="lazy" onerror="this.parentElement.classList.add('team-card__photo--missing')">
+            <img src="./assets/team/team-4.jpg" alt="Nicola Amura" loading="lazy" onerror="this.parentElement.classList.add('team-card__photo--missing')">
           </div>
           <div class="team-card__info">
-            <strong>Nome Cognome</strong>
-            <span>Consulente commerciale e sviluppo rete</span>
+            <strong>Nicola Amura</strong>
+            <span>Esperto di Tecnologie in Estetica</span>
           </div>
         </div>
       </div>
@@ -535,6 +577,11 @@
     </div>
   </section>
 
+  <!-- STICKY CTA -->
+  <div class="sticky-cta" id="sticky-cta">
+    <a href="#contatto" class="sticky-cta__btn">Scopri se la tua zona è ancora libera →</a>
+  </div>
+
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer__inner">
@@ -584,6 +631,47 @@
     window.addEventListener('scroll', () => {
       document.querySelector('.nav').classList.toggle('nav--scrolled', window.scrollY > 40);
     });
+
+    // ── Sticky CTA (mostra dopo 300px di scroll) ──────────────
+    const stickyCta = document.getElementById('sticky-cta');
+    const formSection = document.getElementById('contatto');
+    if (stickyCta && formSection) {
+      window.addEventListener('scroll', () => {
+        const formTop = formSection.getBoundingClientRect().top;
+        if (window.scrollY > 300 && formTop > 0) {
+          stickyCta.classList.add('sticky-cta--visible');
+        } else {
+          stickyCta.classList.remove('sticky-cta--visible');
+        }
+      });
+    }
+
+    // ── Slider testimonianze ──────────────────────────────────
+    (function () {
+      const slider = document.getElementById('testi-slider');
+      if (!slider) return;
+      const track = slider.querySelector('.testi-slider__track');
+      const slides = slider.querySelectorAll('.testi-slide');
+      const dots = slider.querySelectorAll('.testi-dot');
+      const total = slides.length;
+      let current = 0, timer;
+
+      function goTo(i) {
+        current = (i + total) % total;
+        track.style.transform = `translateX(-${current * 100}%)`;
+        dots.forEach((d, j) => d.classList.toggle('testi-dot--active', j === current));
+      }
+      function startAuto() { timer = setInterval(() => goTo(current + 1), 5000); }
+      dots.forEach((d, i) => d.addEventListener('click', () => { clearInterval(timer); goTo(i); startAuto(); }));
+
+      let sx = 0;
+      track.addEventListener('touchstart', e => { sx = e.touches[0].clientX; }, { passive: true });
+      track.addEventListener('touchend', e => {
+        const diff = sx - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) { clearInterval(timer); diff > 0 ? goTo(current+1) : goTo(current-1); startAuto(); }
+      }, { passive: true });
+      startAuto();
+    })();
 
     // ── Carosello ─────────────────────────────────────────────
     (function () {
