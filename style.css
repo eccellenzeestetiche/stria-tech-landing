@@ -1586,6 +1586,12 @@ em {
   margin-top: var(--space-lg);
 }
 
+/* Metodo — CTA più vicina all'immagine machine */
+.metodo .section-cta--big {
+  margin-top: var(--space-sm);
+  padding-top: var(--space-md);
+}
+
 .section-cta__headline {
   font-family: var(--font-serif);
   font-size: clamp(1.4rem, 5.5vw, 2.2rem);
