@@ -2044,18 +2044,17 @@ em {
   gap: 0;
 }
 
-/* Numeri grandi per la riga clienti */
+/* Numeri riga clienti — stesso font-size dei valori accanto */
 .bonus-num {
-  font-family: var(--font-serif);
-  font-size: 1.1rem;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
   font-weight: 700;
   color: #bbb;
-  line-height: 1;
+  line-height: 1.3;
 }
 
 .bonus-num--good {
   color: var(--gold-dark);
-  font-size: 1.15rem;
 }
 
 /* Riga brutale finale */
