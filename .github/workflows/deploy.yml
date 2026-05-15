@@ -13,6 +13,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Inject cache buster into CSS link
+        run: |
+          VERSION=$(git rev-parse --short HEAD)
+          sed -i "s|style.css?v=CACHE_BUST|style.css?v=$VERSION|g" index.html
+
       - name: Deploy via SCP
         uses: appleboy/scp-action@master
         with:
