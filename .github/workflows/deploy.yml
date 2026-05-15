@@ -42,6 +42,19 @@ jobs:
           target: /home/customer/www/web.eccellenzeestetiche.it/public_html
           overwrite: true
 
+      - name: Deploy root redirect via SCP
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SITEGROUND_HOST }}
+          username: ${{ secrets.SITEGROUND_USERNAME }}
+          key: ${{ secrets.SITEGROUND_PRIVATE_KEY }}
+          passphrase: ${{ secrets.SITEGROUND_PASSPHRASE }}
+          port: ${{ secrets.SITEGROUND_PORT }}
+          source: "root-redirect/.htaccess"
+          target: /home/customer/www/web.eccellenzeestetiche.it/public_html
+          overwrite: true
+          strip_components: 1
+
       - name: Purge SiteGround cache via SSH
         uses: appleboy/ssh-action@master
         with:
