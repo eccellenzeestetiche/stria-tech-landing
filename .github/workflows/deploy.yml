@@ -25,10 +25,15 @@ jobs:
           target: /home/customer/www/web.eccellenzeestetiche.it/public_html/stria-tech
           overwrite: true
 
-      - name: Purge SiteGround cache
-        run: |
-          curl -s -X POST "https://api.siteground.com/v1/caches/dynamic/purge" \
-            -H "Authorization: Bearer ${{ secrets.SITEGROUND_API_TOKEN }}" \
-            -H "Content-Type: application/json" \
-            -d '{"site_id": "${{ secrets.SITEGROUND_SITE_ID }}"}'
-        continue-on-error: true
+      - name: Purge SiteGround cache via SSH
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SITEGROUND_HOST }}
+          username: ${{ secrets.SITEGROUND_USERNAME }}
+          key: ${{ secrets.SITEGROUND_PRIVATE_KEY }}
+          passphrase: ${{ secrets.SITEGROUND_PASSPHRASE }}
+          port: ${{ secrets.SITEGROUND_PORT }}
+          script: |
+            find /home/customer/tmp -type f -name "*.cache" -delete 2>/dev/null || true
+            find /home/customer/tmp -type f -name "*.html" -delete 2>/dev/null || true
+            echo "Cache purged"
