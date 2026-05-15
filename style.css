@@ -1844,30 +1844,39 @@ em {
 }
 
 /* ============================================================
-   SLIDER TESTIMONIANZE
+   PRIMA/DOPO MARQUEE
    ============================================================ */
 
-/* Marquee testimonianze — scorre infinito, sfondo bianco */
-.testi-marquee {
+.ba-marquee {
   width: 100vw;
   margin-left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
   margin-top: var(--space-md);
-  padding: var(--space-md) 0;
-  background: #f9f7f4;
+  padding-bottom: var(--space-md);
   position: relative;
   z-index: 2;
 }
 
-.testi-marquee__track {
-  display: flex;
-  gap: 1.25rem;
-  width: max-content;
-  animation: marqueeScroll 28s linear infinite;
+.ba-marquee__label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-align: center;
+  margin-bottom: 1rem;
+  opacity: 0.8;
 }
 
-.testi-marquee__track:hover {
+.ba-marquee__track {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  animation: marqueeScroll 22s linear infinite;
+}
+
+.ba-marquee__track:hover {
   animation-play-state: paused;
 }
 
@@ -1876,53 +1885,35 @@ em {
   100% { transform: translateX(-50%); }
 }
 
-.testi-card {
+.ba-card {
   flex-shrink: 0;
-  width: 280px;
-  background: #ffffff;
-  border: 1px solid rgba(0,0,0,0.08);
+  width: 320px;
   border-radius: var(--radius);
-  padding: 1.25rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 0.75rem;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  overflow: hidden;
+  border: 1px solid rgba(198,167,94,0.18);
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.35);
 }
 
-.testi-card__foto {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
+.ba-card__img {
+  width: 100%;
+  height: 210px;
   object-fit: cover;
-  border: 2px solid var(--gold);
-  flex-shrink: 0;
   display: block;
-  margin: 0 auto;
 }
 
-.testi-card__testo {
-  font-family: var(--font-serif);
-  font-size: 0.92rem;
-  color: #555;
-  line-height: 1.6;
-  font-style: italic;
-}
-
-.testi-card__nome {
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--black);
+.ba-card__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 100%);
+  color: rgba(255,255,255,0.9);
+  font-size: 0.7rem;
+  font-weight: 500;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
-
-.testi-card__centro {
-  font-size: 0.7rem;
-  color: var(--gold-dark);
-  letter-spacing: 0.03em;
-  margin-top: -0.4rem;
+  padding: 1.25rem 0.85rem 0.65rem;
 }
 
 /* ============================================================
@@ -2007,14 +1998,14 @@ em {
 }
 
 .bonus-table {
-  max-width: 700px;
+  max-width: 680px;
   margin-inline: auto;
-  border-radius: 6px;
+  border-radius: 10px;
   overflow: hidden;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(198,167,94,0.15);
   margin-bottom: var(--space-lg);
   background: #ffffff;
-  box-shadow: 0 8px 48px rgba(0,0,0,0.45);
+  box-shadow: 0 12px 56px rgba(0,0,0,0.5);
 }
 
 .bonus-table__header,
@@ -2024,113 +2015,154 @@ em {
 }
 
 .bonus-table__header {
-  background: var(--black);
-  border-bottom: none;
+  background: #0d0d0d;
+  border-bottom: 2px solid rgba(198,167,94,0.2);
 }
 
 .bonus-table__row {
-  border-bottom: 1px solid rgba(0,0,0,0.07);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  transition: background 0.15s;
 }
 
 .bonus-table__row:last-child {
   border-bottom: none;
 }
 
-/* Etichetta gruppo bonus */
-.bonus-table__group-label {
-  background: rgba(198,167,94,0.12);
-  border-top: 1px solid rgba(198,167,94,0.3);
-  border-bottom: 1px solid rgba(198,167,94,0.3);
-  padding: 0.45rem 0.9rem;
-  text-align: center;
-}
-
-.bonus-table__group-label span {
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--gold-dark);
-}
-
 /* Separatore tra bonus e righe base */
 .bonus-table__divider {
-  height: 1px;
-  background: rgba(0,0,0,0.1);
+  height: 2px;
+  background: linear-gradient(to right, rgba(198,167,94,0.12), rgba(198,167,94,0.35), rgba(198,167,94,0.12));
 }
 
 .bonus-table__cell {
-  padding: 0.85rem 1rem;
-  font-size: 0.85rem;
-  line-height: 1.45;
-  color: #555;
+  padding: 0.9rem 1rem;
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: #444;
   display: flex;
   align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .bonus-table__header .bonus-table__cell {
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.7);
-  padding: 0.8rem 1rem;
+  color: rgba(255,255,255,0.45);
+  padding: 0.9rem 1rem;
 }
 
 .bonus-table__header .bonus-table__cell--stria {
   color: var(--gold);
+  position: relative;
+}
+
+.bonus-table__header .bonus-table__cell--stria::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--gold);
+  opacity: 0.6;
+}
+
+.bth__name {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
 }
 
 .bonus-table__cell--stria,
 .bonus-table__cell--altri {
   justify-content: center;
   text-align: center;
-  font-weight: 600;
 }
 
-/* Righe bonus — evidenziate in cima */
+/* Righe bonus — sfondo caldo + accento oro */
 .bonus-table__row--highlight {
-  background: #fffaf3;
-  box-shadow: inset 4px 0 0 var(--gold);
+  background: #fffcf5;
+  box-shadow: inset 3px 0 0 var(--gold);
 }
 
 .bonus-table__row--highlight .bonus-table__cell--feature {
   color: #1a1a1a;
   font-weight: 600;
-}
-
-/* Riga clienti — numeri in evidenza */
-.bonus-table__row--clienti .bonus-table__cell--stria,
-.bonus-table__row--clienti .bonus-table__cell--altri {
   flex-direction: column;
-  gap: 0;
+  align-items: flex-start;
+  gap: 0.3rem;
 }
 
-/* Numeri riga clienti — stesso font-size dei valori accanto */
-.bonus-num {
-  font-family: var(--font-sans);
-  font-size: 0.85rem;
+/* Badge BONUS inline */
+.bonus-badge {
+  display: inline-block;
+  font-size: 0.58rem;
   font-weight: 700;
-  color: #bbb;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  background: rgba(198,167,94,0.1);
+  border: 1px solid rgba(198,167,94,0.3);
+  border-radius: 3px;
+  padding: 0.1rem 0.4rem;
+  line-height: 1.6;
+}
+
+/* Valore bonus — testo dorato */
+.bonus-val {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--gold-dark);
   line-height: 1.3;
 }
 
-.bonus-num--good {
+.bonus-val--big {
+  font-size: 1.15rem;
+  font-weight: 800;
   color: var(--gold-dark);
 }
 
-/* Riga brutale finale */
+.ic-dim {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ccc;
+}
+
+/* Icone ✓ e ✗ */
+.ic-yes {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #3a9e5a;
+  line-height: 1;
+}
+
+.ic-no {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ccc;
+  line-height: 1;
+}
+
+/* ✓ nella colonna "altri" della riga killer — avvertimento */
+.ic-warn {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #c0392b;
+  line-height: 1;
+}
+
+/* Riga finale — killer */
 .bonus-table__row--killer {
   background: #fafafa;
+  border-top: 1px solid rgba(0,0,0,0.06);
 }
 
 .bonus-table__row--killer .bonus-table__cell--feature {
-  color: #888;
+  color: #999;
   font-style: italic;
+  font-size: 0.82rem;
 }
-
-.bonus-si { color: var(--gold-dark); font-weight: 600; }
-.bonus-no  { color: #c0c0c0; }
 
 /* Callout testo — su sfondo nero, stile narrativo con accento oro */
 .bonus-lancio__testo {
@@ -2248,11 +2280,6 @@ em {
   .hero__machine img {
     max-height: 520px;
     object-fit: contain;
-  }
-
-  /* Testimonianze — card più larghe su desktop */
-  .testi-card {
-    width: 320px;
   }
 
   /* Prima/Dopo — colonne più spaziose */

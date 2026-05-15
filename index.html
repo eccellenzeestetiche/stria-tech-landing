@@ -57,65 +57,36 @@
         </div>
       </div>
 
-      <!-- SLIDER TESTIMONIANZE — marquee infinito -->
-      <div class="testi-marquee" aria-label="Testimonianze estetiste Stria-Tech">
-        <div class="testi-marquee__track">
+      <!-- PRIMA/DOPO MARQUEE — scorre infinito -->
+      <div class="ba-marquee" aria-label="Risultati prima e dopo Stria-Tech">
+        <p class="ba-marquee__label">I RISULTATI</p>
+        <div class="ba-marquee__track">
 
-          <div class="testi-card">
-            <img src="./assets/team/team-2.jpg" alt="Lorella Tartaglia" class="testi-card__foto">
-            <p class="testi-card__testo">"I risultati si vedono. Le clienti tornano e portano le amiche."</p>
-            <p class="testi-card__nome">Lorella Tartaglia</p>
-            <p class="testi-card__centro">Centro Estetico Lorella, Milano</p>
+          <div class="ba-card">
+            <img src="./assets/visuals/before-after.jpg" alt="Prima e dopo — smagliature zona cosce" class="ba-card__img" loading="lazy">
+            <p class="ba-card__caption">Zona cosce · ciclo completo</p>
+          </div>
+          <div class="ba-card">
+            <img src="./assets/visuals/ba-slide-2.jpg" alt="Prima e dopo — smagliature zona addome" class="ba-card__img" loading="lazy">
+            <p class="ba-card__caption">Zona addome · post-gravidanza</p>
+          </div>
+          <div class="ba-card">
+            <img src="./assets/visuals/ba-slide-3.jpg" alt="Prima e dopo — smagliature zona coscia" class="ba-card__img" loading="lazy">
+            <p class="ba-card__caption">Zona coscia · smagliature recenti</p>
           </div>
 
-          <div class="testi-card">
-            <img src="./assets/team/team-3.jpg" alt="Mario Perciavalle" class="testi-card__foto">
-            <p class="testi-card__testo">"Finalmente un protocollo che funziona davvero, seduta dopo seduta."</p>
-            <p class="testi-card__nome">Mario Perciavalle</p>
-            <p class="testi-card__centro">Istituto Perciavalle, Napoli</p>
+          <!-- Duplicati per loop seamless -->
+          <div class="ba-card" aria-hidden="true">
+            <img src="./assets/visuals/before-after.jpg" alt="" class="ba-card__img" loading="lazy">
+            <p class="ba-card__caption">Zona cosce · ciclo completo</p>
           </div>
-
-          <div class="testi-card">
-            <img src="./assets/team/team-4.jpg" alt="Nicola Amura" class="testi-card__foto">
-            <p class="testi-card__testo">"Non è il solito macchinario. È un sistema completo che cambia il centro."</p>
-            <p class="testi-card__nome">Nicola Amura</p>
-            <p class="testi-card__centro">Beauty Lab Amura, Roma</p>
+          <div class="ba-card" aria-hidden="true">
+            <img src="./assets/visuals/ba-slide-2.jpg" alt="" class="ba-card__img" loading="lazy">
+            <p class="ba-card__caption">Zona addome · post-gravidanza</p>
           </div>
-
-          <div class="testi-card">
-            <img src="./assets/team/team-1.jpg" alt="Andrea Cetti" class="testi-card__foto">
-            <p class="testi-card__testo">"Stria-Tech mi ha dato una risposta concreta da dare alle clienti sulle smagliature."</p>
-            <p class="testi-card__nome">Andrea Cetti</p>
-            <p class="testi-card__centro">Eccellenze Estetiche, Italia</p>
-          </div>
-
-          <!-- Duplicato per loop seamless -->
-          <div class="testi-card" aria-hidden="true">
-            <img src="./assets/team/team-2.jpg" alt="" class="testi-card__foto">
-            <p class="testi-card__testo">"I risultati si vedono. Le clienti tornano e portano le amiche."</p>
-            <p class="testi-card__nome">Lorella Tartaglia</p>
-            <p class="testi-card__centro">Centro Estetico Lorella, Milano</p>
-          </div>
-
-          <div class="testi-card" aria-hidden="true">
-            <img src="./assets/team/team-3.jpg" alt="" class="testi-card__foto">
-            <p class="testi-card__testo">"Finalmente un protocollo che funziona davvero, seduta dopo seduta."</p>
-            <p class="testi-card__nome">Mario Perciavalle</p>
-            <p class="testi-card__centro">Istituto Perciavalle, Napoli</p>
-          </div>
-
-          <div class="testi-card" aria-hidden="true">
-            <img src="./assets/team/team-4.jpg" alt="" class="testi-card__foto">
-            <p class="testi-card__testo">"Non è il solito macchinario. È un sistema completo che cambia il centro."</p>
-            <p class="testi-card__nome">Nicola Amura</p>
-            <p class="testi-card__centro">Beauty Lab Amura, Roma</p>
-          </div>
-
-          <div class="testi-card" aria-hidden="true">
-            <img src="./assets/team/team-1.jpg" alt="" class="testi-card__foto">
-            <p class="testi-card__testo">"Stria-Tech mi ha dato una risposta concreta da dare alle clienti sulle smagliature."</p>
-            <p class="testi-card__nome">Andrea Cetti</p>
-            <p class="testi-card__centro">Eccellenze Estetiche, Italia</p>
+          <div class="ba-card" aria-hidden="true">
+            <img src="./assets/visuals/ba-slide-3.jpg" alt="" class="ba-card__img" loading="lazy">
+            <p class="ba-card__caption">Zona coscia · smagliature recenti</p>
           </div>
 
         </div>
@@ -140,69 +111,77 @@
       <p class="bonus-lancio__tabella-label">LA SCHEDA COMPARATIVA</p>
 
       <div class="bonus-table">
-        <!-- Etichetta bonus — prima di tutto -->
-        <div class="bonus-table__group-label">
-          <span>★ BONUS LANCIO — incluso solo durante il periodo di lancio</span>
-        </div>
 
         <!-- Intestazioni colonne -->
         <div class="bonus-table__header">
           <div class="bonus-table__cell bonus-table__cell--feature"></div>
-          <div class="bonus-table__cell bonus-table__cell--stria">STRIA-TECH</div>
-          <div class="bonus-table__cell bonus-table__cell--altri">Macchinario qualunque</div>
+          <div class="bonus-table__cell bonus-table__cell--stria">
+            <span class="bth__name">STRIA-TECH</span>
+          </div>
+          <div class="bonus-table__cell bonus-table__cell--altri">Macchinario<br>qualunque</div>
+        </div>
+
+        <!-- Righe BONUS evidenziate -->
+        <div class="bonus-table__row bonus-table__row--highlight">
+          <div class="bonus-table__cell bonus-table__cell--feature">
+            2 mesi di pubblicità pagata da noi
+            <span class="bonus-badge">★ BONUS</span>
+          </div>
+          <div class="bonus-table__cell bonus-table__cell--stria"><span class="bonus-val">500€/mese</span></div>
+          <div class="bonus-table__cell bonus-table__cell--altri"><span class="ic-no">✗</span></div>
         </div>
 
         <div class="bonus-table__row bonus-table__row--highlight">
-          <div class="bonus-table__cell bonus-table__cell--feature">2 mesi di pubblicità pagata da noi</div>
-          <div class="bonus-table__cell bonus-table__cell--stria"><span class="bonus-si">500€ al mese</span></div>
-          <div class="bonus-table__cell bonus-table__cell--altri"><span class="bonus-no">✗ No</span></div>
+          <div class="bonus-table__cell bonus-table__cell--feature">
+            Gestione marketing inclusa
+            <span class="bonus-badge">★ BONUS</span>
+          </div>
+          <div class="bonus-table__cell bonus-table__cell--stria"><span class="bonus-val">Valore 1.800€</span></div>
+          <div class="bonus-table__cell bonus-table__cell--altri"><span class="ic-no">✗</span></div>
         </div>
 
         <div class="bonus-table__row bonus-table__row--highlight">
-          <div class="bonus-table__cell bonus-table__cell--feature">Gestione marketing inclusa</div>
-          <div class="bonus-table__cell bonus-table__cell--stria"><span class="bonus-si">Sì — Valore 1.800€</span></div>
-          <div class="bonus-table__cell bonus-table__cell--altri"><span class="bonus-no">✗ No</span></div>
-        </div>
-
-        <div class="bonus-table__row bonus-table__row--highlight bonus-table__row--clienti">
-          <div class="bonus-table__cell bonus-table__cell--feature">Clienti acquisite per te (al mese)</div>
-          <div class="bonus-table__cell bonus-table__cell--stria"><span class="bonus-num bonus-num--good">da 20 a 40</span></div>
-          <div class="bonus-table__cell bonus-table__cell--altri"><span class="bonus-num">da 2 a 5</span></div>
+          <div class="bonus-table__cell bonus-table__cell--feature">
+            Clienti nuove al mese
+            <span class="bonus-badge">★ BONUS</span>
+          </div>
+          <div class="bonus-table__cell bonus-table__cell--stria"><span class="bonus-val bonus-val--big">20–40</span></div>
+          <div class="bonus-table__cell bonus-table__cell--altri"><span class="ic-dim">2–5</span></div>
         </div>
 
         <!-- Separatore -->
         <div class="bonus-table__divider"></div>
 
-        <!-- Righe base -->
+        <!-- Righe standard -->
         <div class="bonus-table__row">
           <div class="bonus-table__cell bonus-table__cell--feature">Metodo esclusivo per zona</div>
-          <div class="bonus-table__cell bonus-table__cell--stria"><span class="bonus-si">✦ Sì</span></div>
-          <div class="bonus-table__cell bonus-table__cell--altri"><span class="bonus-no">✗ No</span></div>
+          <div class="bonus-table__cell bonus-table__cell--stria"><span class="ic-yes">✓</span></div>
+          <div class="bonus-table__cell bonus-table__cell--altri"><span class="ic-no">✗</span></div>
         </div>
 
         <div class="bonus-table__row">
           <div class="bonus-table__cell bonus-table__cell--feature">Protocollo strutturato e testato</div>
-          <div class="bonus-table__cell bonus-table__cell--stria"><span class="bonus-si">✦ Sì</span></div>
-          <div class="bonus-table__cell bonus-table__cell--altri"><span class="bonus-no">✗ No</span></div>
+          <div class="bonus-table__cell bonus-table__cell--stria"><span class="ic-yes">✓</span></div>
+          <div class="bonus-table__cell bonus-table__cell--altri"><span class="ic-no">✗</span></div>
         </div>
 
         <div class="bonus-table__row">
           <div class="bonus-table__cell bonus-table__cell--feature">Supporto nelle consulenze</div>
-          <div class="bonus-table__cell bonus-table__cell--stria"><span class="bonus-si">✦ Sì</span></div>
-          <div class="bonus-table__cell bonus-table__cell--altri"><span class="bonus-no">✗ No</span></div>
+          <div class="bonus-table__cell bonus-table__cell--stria"><span class="ic-yes">✓</span></div>
+          <div class="bonus-table__cell bonus-table__cell--altri"><span class="ic-no">✗</span></div>
         </div>
 
         <div class="bonus-table__row">
           <div class="bonus-table__cell bonus-table__cell--feature">Strategie per riempire l'agenda</div>
-          <div class="bonus-table__cell bonus-table__cell--stria"><span class="bonus-si">✦ Sì</span></div>
-          <div class="bonus-table__cell bonus-table__cell--altri"><span class="bonus-no">✗ No</span></div>
+          <div class="bonus-table__cell bonus-table__cell--stria"><span class="ic-yes">✓</span></div>
+          <div class="bonus-table__cell bonus-table__cell--altri"><span class="ic-no">✗</span></div>
         </div>
 
-        <!-- RIGA BRUTALE FINALE -->
+        <!-- Riga finale — colpi di scena -->
         <div class="bonus-table__row bonus-table__row--killer">
           <div class="bonus-table__cell bonus-table__cell--feature">Dopo l'acquisto sei sola</div>
-          <div class="bonus-table__cell bonus-table__cell--stria"><span class="bonus-no">✗ No</span></div>
-          <div class="bonus-table__cell bonus-table__cell--altri"><span class="bonus-si">✦ Sì</span></div>
+          <div class="bonus-table__cell bonus-table__cell--stria"><span class="ic-no">✗</span></div>
+          <div class="bonus-table__cell bonus-table__cell--altri"><span class="ic-warn">✓</span></div>
         </div>
       </div>
 
