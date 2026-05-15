@@ -24,3 +24,11 @@ jobs:
           source: "index.html,style.css,assets,.htaccess"
           target: /home/customer/www/web.eccellenzeestetiche.it/public_html/stria-tech
           overwrite: true
+
+      - name: Purge SiteGround cache
+        run: |
+          curl -s -X POST "https://api.siteground.com/v1/caches/dynamic/purge" \
+            -H "Authorization: Bearer ${{ secrets.SITEGROUND_API_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -d '{"site_id": "${{ secrets.SITEGROUND_SITE_ID }}"}'
+        continue-on-error: true
