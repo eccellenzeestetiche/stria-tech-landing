@@ -1924,13 +1924,21 @@ em {
 
 .bonus-lancio {
   padding-block: var(--space-xl);
-  background: var(--black-mid);
-  background-image:
-    radial-gradient(ellipse 70% 40% at 50% 0%, rgba(198,167,94,0.06) 0%, transparent 55%);
+  background: #f9f7f4;
 }
 
 .bonus-lancio__headline {
-  margin-bottom: var(--space-md);
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+
+/* Linea decorativa oro sotto headline */
+.bonus-lancio__deco {
+  width: 48px;
+  height: 2px;
+  background: var(--gold);
+  margin: 0 auto var(--space-md);
+  border-radius: 1px;
 }
 
 .bonus-lancio__tabella-label {
@@ -1952,7 +1960,7 @@ em {
   border: 1px solid rgba(0,0,0,0.1);
   margin-bottom: var(--space-lg);
   background: #ffffff;
-  box-shadow: 0 8px 40px rgba(0,0,0,0.35);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
 }
 
 .bonus-table__header,
@@ -2070,9 +2078,41 @@ em {
 .bonus-si { color: var(--gold-dark); font-weight: 600; }
 .bonus-no  { color: #c0c0c0; }
 
+/* Callout testo — card scura sotto la tabella */
+.bonus-lancio__testo {
+  max-width: 640px;
+  margin-inline: auto;
+  background: var(--black);
+  border-radius: 6px;
+  padding: 1.75rem 2rem;
+  border-left: 4px solid var(--gold);
+  margin-bottom: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.bonus-lancio__testo p {
+  font-size: clamp(0.92rem, 2vw, 1rem);
+  color: var(--white-muted);
+  line-height: 1.75;
+}
+
+.bonus-lancio__testo strong {
+  color: var(--white);
+}
+
+.bonus-lancio__testo-finale {
+  font-family: var(--font-serif);
+  font-size: clamp(1rem, 2.5vw, 1.1rem) !important;
+  color: var(--gold) !important;
+  font-style: italic;
+  padding-top: 0.25rem;
+}
+
 .bonus-lancio__nota {
   font-size: 0.72rem;
-  color: rgba(255,255,255,0.3);
+  color: rgba(0,0,0,0.35);
   letter-spacing: 0.03em;
   line-height: 1.6;
 }
