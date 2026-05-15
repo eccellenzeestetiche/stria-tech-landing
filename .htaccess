@@ -1,10 +1,7 @@
 DirectoryIndex index.html
 
-RewriteEngine On
-RewriteRule ^stria-tech/?$ /stria-tech/index.html [R=301,L]
-
-# Disabilita cache per HTML e CSS — aggiornamento immediato dopo ogni deploy
-<FilesMatch "\.(html|css)$">
+# Disabilita cache per aggiornamenti immediati dopo ogni deploy
+<FilesMatch "\.(html|css|js)$">
   Header set Cache-Control "no-cache, no-store, must-revalidate"
   Header set Pragma "no-cache"
   Header set Expires 0
