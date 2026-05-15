@@ -34,9 +34,8 @@ jobs:
           passphrase: ${{ secrets.SITEGROUND_PASSPHRASE }}
           port: ${{ secrets.SITEGROUND_PORT }}
           script: |
-            TARGET="/home/customer/www/web.eccellenzeestetiche.it/public_html/stria-tech"
-            touch "$TARGET/index.html"
-            touch "$TARGET/style.css"
-            find /home/customer/tmp -type d \( -name "cache" -o -name "sg-cache" -o -name "nginx-cache" \) -exec find {} -type f -delete \; 2>/dev/null || true
-            find /home/customer/tmp -maxdepth 3 -type f \( -name "*.cache" -o -name "*.html" -o -name "*.tmp" \) -delete 2>/dev/null || true
-            echo "Cache purge attempted"
+            cd /home/customer/www/web.eccellenzeestetiche.it/public_html
+            wp sg purge || true
+            touch stria-tech/index.html
+            touch stria-tech/style.css
+            echo "Deploy completed and cache purge attempted"
