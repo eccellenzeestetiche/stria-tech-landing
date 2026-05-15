@@ -30,6 +30,18 @@ jobs:
           target: /home/customer/www/web.eccellenzeestetiche.it/public_html/stria-tech
           overwrite: true
 
+      - name: Deploy thank you page via SCP
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SITEGROUND_HOST }}
+          username: ${{ secrets.SITEGROUND_USERNAME }}
+          key: ${{ secrets.SITEGROUND_PRIVATE_KEY }}
+          passphrase: ${{ secrets.SITEGROUND_PASSPHRASE }}
+          port: ${{ secrets.SITEGROUND_PORT }}
+          source: "conferma-prenotazione/index.html"
+          target: /home/customer/www/web.eccellenzeestetiche.it/public_html
+          overwrite: true
+
       - name: Purge SiteGround cache via SSH
         uses: appleboy/ssh-action@master
         with:
@@ -43,4 +55,5 @@ jobs:
             wp sg purge || true
             touch stria-tech/index.html
             touch stria-tech/style.css
+            touch conferma-prenotazione/index.html
             echo "Deploy completed and cache purge attempted"
