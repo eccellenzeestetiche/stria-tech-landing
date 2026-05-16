@@ -2190,32 +2190,31 @@ em {
   margin-inline: auto;
   padding: 1.75rem 2rem;
   border-left: 3px solid var(--gold);
-  background: #ffffff;
+  background: rgba(198,167,94,0.04);
   border-radius: 0 var(--radius) var(--radius) 0;
   margin-bottom: var(--space-lg);
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
 }
 
 .bonus-lancio__testo p {
   font-size: clamp(0.95rem, 2vw, 1.05rem);
-  color: #444;
+  color: var(--white-muted);
   line-height: 1.8;
 }
 
 .bonus-lancio__testo strong {
-  color: #1a1a1a;
+  color: var(--white);
   font-weight: 700;
 }
 
 .bonus-lancio__testo-finale {
   font-family: var(--font-serif);
   font-size: clamp(1rem, 2.5vw, 1.15rem) !important;
-  color: var(--gold-dark) !important;
+  color: var(--gold) !important;
   font-style: italic;
-  border-top: 1px solid rgba(198,167,94,0.3);
+  border-top: 1px solid rgba(198,167,94,0.2);
   padding-top: 0.85rem;
   margin-top: 0.25rem;
 }
