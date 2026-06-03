@@ -1887,9 +1887,6 @@ em {
   animation: marqueeScroll 22s linear infinite;
 }
 
-.ba-marquee__track:hover {
-  animation-play-state: paused;
-}
 
 @keyframes marqueeScroll {
   0%   { transform: translateX(0); }
