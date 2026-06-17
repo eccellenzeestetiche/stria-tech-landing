@@ -619,7 +619,7 @@
         <p class="cta-finale__nota-pre">Nessun impegno. Nessuna pressione. Solo una conversazione tra professionisti.</p>
 
         <div class="cta-booking">
-          <iframe src="https://frontend-ten-theta-65.vercel.app/" style="width:100%;min-height:700px;border:none;overflow:hidden;" scrolling="no" allowtransparency="true"></iframe>
+          <iframe id="booking-iframe" src="https://frontend-ten-theta-65.vercel.app/" style="width:100%;min-height:900px;border:none;overflow:hidden;transition:height 0.3s ease;" scrolling="no" allowtransparency="true"></iframe>
         </div>
       </div>
     </div>
@@ -693,6 +693,22 @@
         }
       });
     }
+
+    // ── Iframe booking auto-resize ────────────────────────────
+    (function() {
+      const iframe = document.getElementById('booking-iframe');
+      if (!iframe) return;
+      window.addEventListener('message', function(e) {
+        if (!e.data) return;
+        var h = 0;
+        if (typeof e.data === 'number') h = e.data;
+        else if (typeof e.data === 'object') h = e.data.height || e.data.frameHeight || e.data.scrollHeight || 0;
+        else if (typeof e.data === 'string') {
+          try { var d = JSON.parse(e.data); h = d.height || d.frameHeight || d.scrollHeight || 0; } catch(_) {}
+        }
+        if (h > 100) iframe.style.height = (h + 40) + 'px';
+      });
+    })();
 
     // ── Scroll to form — offset per nav sticky ────────────────
     document.querySelectorAll('a[href="#contatto"]').forEach(a => {
