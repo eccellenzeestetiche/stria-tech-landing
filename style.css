@@ -2181,6 +2181,43 @@ em {
   font-size: 0.82rem;
 }
 
+/* Valore complessivo bonus — banner oro */
+.bonus-lancio__totale {
+  max-width: 600px;
+  margin-inline: auto;
+  margin-bottom: var(--space-md);
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  text-align: center;
+  border: 1px solid rgba(198,167,94,0.35);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, rgba(198,167,94,0.10), rgba(198,167,94,0.03));
+}
+
+.bonus-lancio__totale-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--white-muted);
+}
+
+.bonus-lancio__totale-num {
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 7vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--gold);
+}
+
+.bonus-lancio__totale-sub {
+  font-size: 0.85rem;
+  color: var(--white-muted);
+  font-style: italic;
+}
+
 /* Callout testo — su sfondo nero, stile narrativo con accento oro */
 .bonus-lancio__testo {
   max-width: 600px;
