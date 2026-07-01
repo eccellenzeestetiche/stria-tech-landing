@@ -29,8 +29,8 @@
     // PageView — inviato a entrambi i pixel
     fbq('track', 'PageView');
 
-    // ViewContent — inviato a entrambi i pixel al caricamento
-    fbq('track', 'ViewContent');
+    // NB: nessun evento "Lead" viene mai inviato da questa landing.
+    // ViewContent parte allo scroll (vedi script in fondo alla pagina).
   </script>
   <noscript>
     <img height="1" width="1" style="display:none"
@@ -753,16 +753,31 @@
       });
     });
 
-    // ── Meta Pixel — tracking click sui bottoni/CTA ───────────
-    // Ogni click su un pulsante (.btn, .sticky-cta__btn o link al form)
-    // invia un evento "Lead" a entrambi i pixel Meta.
+    // ── Meta Pixel — ViewContent allo scroll ──────────────────
+    // ViewContent parte una sola volta, quando l'utente inizia a
+    // scorrere la pagina. Nessun Lead viene mai inviato.
+    (function() {
+      let vcSent = false;
+      function fireViewContent() {
+        if (vcSent) return;
+        vcSent = true;
+        if (typeof fbq === 'function') fbq('track', 'ViewContent');
+        window.removeEventListener('scroll', fireViewContent);
+      }
+      window.addEventListener('scroll', fireViewContent, { passive: true });
+    })();
+
+    // ── Meta Pixel — evento "PushButton" al click dei pulsanti ─
+    // Ogni click su un pulsante (.btn, .sticky-cta__btn o link al
+    // form) invia l'evento custom "PushButton" a entrambi i pixel.
+    // NON viene mai inviato alcun evento "Lead".
     document.querySelectorAll(
       '.btn, .sticky-cta__btn, a[href="#contatto"]'
     ).forEach(el => {
       el.addEventListener('click', () => {
         if (typeof fbq === 'function') {
-          fbq('track', 'Lead', {
-            content_name: (el.textContent || '').trim().slice(0, 100),
+          fbq('trackCustom', 'PushButton', {
+            button_text: (el.textContent || '').trim().slice(0, 100),
             source: 'landing-stria-tech'
           });
         }
