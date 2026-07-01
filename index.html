@@ -676,6 +676,18 @@
         <div class="cta-booking">
           <iframe id="booking-iframe" src="https://frontend-cyan-ten-nzxyz0wh44.vercel.app/" style="width:100%;min-height:1300px;border:none;overflow:hidden;transition:height 0.3s ease;" scrolling="no" allowtransparency="true"></iframe>
         </div>
+        <!-- Propaga il parametro ?referral= al calendario -->
+        <script>
+          (function() {
+            var referral = new URLSearchParams(window.location.search).get('referral');
+            if (!referral) return;
+            var iframe = document.getElementById('booking-iframe');
+            if (iframe) {
+              var src = iframe.src || iframe.getAttribute('src');
+              iframe.src = src + (src.includes('?') ? '&' : '?') + 'referral=' + encodeURIComponent(referral);
+            }
+          })();
+        </script>
       </div>
     </div>
   </section>
